@@ -1,3 +1,3 @@
 # BattleArena
 
-[[/mnt/c/Users/drrad/Downloads/Battle-Arena-UML.jpg]]
+[[assets/Battle-Arena-UML.jpg]]
