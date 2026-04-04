@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.21)
+project(mygame)
+add_executable(game src/main.cpp include/Character.h)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
+target_link_libraries(game PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+target_include_directories(game PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

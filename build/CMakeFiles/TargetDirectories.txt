@@ -1,0 +1,3 @@
+/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build/CMakeFiles/game.dir
+/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build/CMakeFiles/rebuild_cache.dir
