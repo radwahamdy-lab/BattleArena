@@ -56,4 +56,12 @@
      1. Restart Button
      2. Exit Button
 
+***
+
+# Classes:
+## Character (Abstract)
+## Warrior
+## Archer
+## Mage
+
 ![[assets/Battle-Arena-UML.jpg]]
