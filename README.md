@@ -59,9 +59,71 @@
 ***
 
 # Classes:
-## Character (Abstract)
-## Warrior
-## Archer
-## Mage
 
-![[assets/Battle-Arena-UML.jpg]]
+## Character (Abstract)
+### Data Members
+1. Score / Health
+2. Direction (struct)
+3. Position (struct)
+4. Initial Health 
+5. Base Damage
+### Functions
+1. move(Position newPos)
+2. attack() -> virtual
+3. turn() -> clockwise/anti (degree=90)
+4. takeDamage(int dmg)
+5. getHealth()
+6. getPos()
+7. getDirection()
+8. getScore()
+10. displayHealth()
+
+## Warrior
+### Data Members
+1. Damage
+2. Health
+### Functions
+1. attack() -> special case
+
+## Archer
+### Data Members
+1. Damage
+2. Health
+### Functions
+1. attack()
+
+## Mage
+### Data Members
+1. Damage
+2. Health
+### Functions
+1. attack()
+
+## Projectile
+### Data Members
+1. speed
+2. position
+3. damage value
+4. color
+5. size
+### Functions
+1. isCollide()
+
+## Game Class
+### Data Members
+1. const characters=2
+2. timer=2 minutes
+3. game_state=paused/running/not running
+4. Game Menu
+5. field_color
+### Functions
+1. displayScore()
+2. displayWinner()
+
+## Game Menu
+### Data Members
+### Functions
+1. restart()
+2. pause()
+3. exit()
+
