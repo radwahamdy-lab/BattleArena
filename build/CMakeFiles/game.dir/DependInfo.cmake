@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"
+  "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/gui/main.cpp" "CMakeFiles/game.dir/gui/main.cpp.o" "gcc" "CMakeFiles/game.dir/gui/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

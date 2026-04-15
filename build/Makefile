@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build/CMakeFiles" "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/Uni/1st Year/CS 2/BattleArena/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+gui/main.o: gui/main.cpp.o
+.PHONY : gui/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+gui/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/main.cpp.o
+.PHONY : gui/main.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+gui/main.i: gui/main.cpp.i
+.PHONY : gui/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+gui/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/main.cpp.i
+.PHONY : gui/main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+gui/main.s: gui/main.cpp.s
+.PHONY : gui/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+gui/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/main.cpp.s
+.PHONY : gui/main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... game"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... gui/main.o"
+	@echo "... gui/main.i"
+	@echo "... gui/main.s"
 .PHONY : help
 
 
