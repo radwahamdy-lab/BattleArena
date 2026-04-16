@@ -13,25 +13,27 @@ class StartScreen {
 			QVBoxLayout *startLayout = new QVBoxLayout(startPage);
 
 			QLabel *title = new QLabel("Battle Arena");
-			title->setGeometry(170, 60, 431, 101);
 			title->setStyleSheet("font: 700 36pt 'JetBrainsMono Nerd Font Propo'; color: white");
 
 			QPushButton *newGameBtn = new QPushButton("New Game");
-			newGameBtn->setGeometry(90, 190, 611, 51);
-			newGameBtn->setStyleSheet("font: 16pt 'DejaVu Sans'; color: white;");
+			newGameBtn->setFixedWidth(611);
+			newGameBtn->setFixedHeight(51);
+			newGameBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
 			QPushButton *contGameBtn = new QPushButton("Continue Game");
-			contGameBtn->setGeometry(90, 270, 611, 51);
-			contGameBtn->setStyleSheet("font: 16pt 'DejaVu Sans'; color: white;");
+			contGameBtn->setFixedWidth(611);
+			contGameBtn->setFixedHeight(51);
+			contGameBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
 			QPushButton *exitBtn = new QPushButton("Exit");
-			exitBtn->setGeometry(90, 350, 611, 51);
-			exitBtn->setStyleSheet("font: 16pt 'DejaVu Sans'; color: white;");
+			exitBtn->setFixedWidth(611);
+			exitBtn->setFixedHeight(51);
+			exitBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
-			startLayout->addWidget(title);
-			startLayout->addWidget(newGameBtn);
-			startLayout->addWidget(contGameBtn);
-			startLayout->addWidget(exitBtn);
+			startLayout->addWidget(title, 2, Qt::AlignCenter);
+			startLayout->addWidget(newGameBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(contGameBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(exitBtn, 2, Qt::AlignCenter);
 
 			QObject::connect(newGameBtn, &QPushButton::clicked, [stackedwid](){
 				stackedwid->setCurrentIndex(1);

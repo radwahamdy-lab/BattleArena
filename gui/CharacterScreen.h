@@ -12,6 +12,8 @@ class CharacterScreen {
 			QVBoxLayout *startLayout = new QVBoxLayout(characterPage);
 
 			QPushButton *returnBtn = new QPushButton("Return");
+			returnBtn->setGeometry(90, 190, 611, 51);
+			returnBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white; background-color: rgb(47, 47, 47);");
 
 			startLayout->addWidget(returnBtn);
 
