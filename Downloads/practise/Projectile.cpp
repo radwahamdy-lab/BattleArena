@@ -21,4 +21,4 @@ bool Projectile::isCollide(const Character& target) const {
 
 Position Projectile::getPosition() const {
     return position;
-}
+}g
