@@ -2,31 +2,31 @@
 #define CHARACTER_H
 
 #include <QGraphicsRectItem>
+#include <QBrush>
 #include <QKeyEvent>
 #include <string>
-using namespace std;
 
-class Character{
-	private:
-		static int characterCount;
-		const string name; // I made it constant because it shouldn't change
-		const int attackPower = 5; // I made it constant because it shouldn't change
-		int health;
+class Character : public QGraphicsRectItem {
+    private:
+        int score;
+        int speed;
+        static int characterCount;
+    protected:
+        void keyPressEvent(QKeyEvent *event) override;
+    public:
+        Character(int newScore = 0, int speed = 10);
+        virtual ~Character();
 
-	protected:
-		void keyPressEvent(QKeyEvent* event);
-		int getAttackPower() const;
-	public:
-		Character(string n, int h);
-		virtual ~Character();
-		string getName() const;
-		virtual int attack(bool isSpecial) const = 0;
-		virtual int specialAbility() const = 0;
-		void takeDamage(int damage);
-		bool isAlive() const;
-		static int getCharacterCount();
-		int getHealth() const; // I moved it from protected to public to be able to access it when creating the final scoreboard
+        int getScore() const {
+		return score;
+	}
+        int getSpeed() const {
+		return speed;
+	}
+        static int getCharacterCount();
 
+        virtual int attack(bool isSpecial) const = 0;
+        void scoreInc(int amount);
 };
 
 #endif
