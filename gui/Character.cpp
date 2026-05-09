@@ -17,9 +17,9 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QGraphicsPixmap
         setPos(600,0);
         direction = 3;
     }
-    if(character == 1) char_ptr = archer;
-    else if(character == 2) char_ptr = warrior;
-    else if(character == 3) char_ptr = mage;
+    if(character == ARCHER) char_ptr = archer;
+    else if(character == WARRIOR) char_ptr = warrior;
+    else if(character == MAGE) char_ptr = mage;
     setPixmap(char_ptr[0]);
     setZValue(1);
 }
@@ -41,14 +41,14 @@ int Character::getDirection(){
 }
 
 QPixmap* Character::getPixmaps(){
-    if(character==1) return archer;
-    if(character==2) return warrior;
+    if(character==ARCHER) return archer;
+    if(character==WARRIOR) return warrior;
     else return mage;
 }
 
 void Character::keyPressEvent(QKeyEvent *event) {
     if (event->key() == Qt::Key_Space){
-        if(character != 2)
+        if(character != WARRIOR)
             Projectile* projectile = new Projectile(scene, enemy, this, 1);
         else{
             // Close Attack For Warrior

@@ -3,6 +3,12 @@
 #include <QKeyEvent>
 #include <QPixmap>
 
+enum CharacterType {
+    ARCHER = 1,
+    WARRIOR = 2,
+    MAGE = 3
+};
+
 class Character : public QGraphicsPixmapItem {
     public:
         Character(QGraphicsScene*, int, bool);

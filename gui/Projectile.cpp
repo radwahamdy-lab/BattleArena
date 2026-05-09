@@ -4,9 +4,9 @@
 Projectile::Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, int inc) : QGraphicsPixmapItem(), scene(sc), target(tar), source(src), scoreInc(inc), character(src->getCharacter()), direction(src->getDirection()) {
     timer = new QTimer(this);
 
-    if(character != 2){
+    if(character != WARRIOR){
         setPos(source->x(), source->y());
-        if(character == 1) setPixmap(arrow);
+        if(character == ARCHER) setPixmap(arrow);
         else setPixmap(magic);
         setZValue(1);
         scene->addItem(this);
@@ -27,7 +27,6 @@ void Projectile::close_attack() {
 }
 
 void Projectile::step() {
-
     switch (direction) {
         case 1: 
             setPixmap(pixmap().transformed(QTransform().scale(1, 1)));

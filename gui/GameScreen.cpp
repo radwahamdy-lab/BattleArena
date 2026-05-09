@@ -11,8 +11,9 @@
 #include <QString>
 #include <QFont>
 #include <string>
-using namespace std;
 #include "Character.h"
+
+using namespace std;
 
 GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int compCharacter){
     QVBoxLayout* layout = new QVBoxLayout(gamePage);
@@ -26,28 +27,13 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     scene->setBackgroundBrush(QBrush(grassTile));
 
     // Drawing Timer
-    QGraphicsTextItem *timerText = new QGraphicsTextItem();
+    timerText = new QGraphicsTextItem(); // encapsulation, so that other classes can access timerText
     QFont timer_font("JetBrainsMono Nerd Font Propo", 35, QFont::Bold);
     timerText->setDefaultTextColor(QColor(229, 68, 9));
     timerText->setFont(timer_font);
     timerText->setPos(350, 10);
     timerText->setPlainText("3:00");
     scene->addItem(timerText);
-
-    // Creating Timer
-    QTimer *sec = new QTimer();
-    QObject::connect(sec, &QTimer::timeout, [sec, this, timerText](){
-        if(time != 0){
-            time--;
-            int minutes = this->time/60;
-            int seconds = this->time%60;
-            string time_str = to_string(minutes) + ":" + to_string(seconds);
-            QString time_qt = QString::fromStdString(time_str);
-            timerText->setPlainText(time_qt);
-            sec->start(1000);
-        }
-    });
-    sec->start(1000);
 
     // Creating Character
     player = new Character(scene, 2, false);
@@ -69,4 +55,8 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
 
 QWidget* GameScreen::getPage(){
     return gamePage;
+}
+
+void GameScreen::updateTimer(QString text){
+    timerText->setPlainText(text);
 }
