@@ -1,58 +1,27 @@
 #include "Character.h"
-#include <iostream>
-#include <QKeyEvent>
-using namespace std;
 
 int Character::characterCount = 0;
 
-Character::Character(string n, int h) : name(n) {
-	health = h;
+Character::Character(int s, int spd) : score(newScore), speed(newSpeed) {
 	setRect(0, 0, 100, 100);
-	setPos(100, 100);
-	setBrush(Qt::blue);
-	setFlag(QGraphicsItem::ItemIsFocusable);
-	setFocus();
+    	setPos(100, 100);
+    	setBrush(Qt::white);
+    	setFlag(QGraphicsItem::ItemIsFocusable);
+
 	characterCount++;
 }
 
 Character::~Character() {
-	characterCount--;
+    	characterCount--;
 }
 
-int Character::getAttackPower() const {
-	return attackPower;
+void Character::keyPressEvent(QKeyEvent *event) {
+    	if(event->key() == Qt::Key_Left) moveBy(-speed, 0);
+    	else if(event->key() == Qt::Key_Right) moveBy(speed, 0);
+    	else if(event->key() == Qt::Key_Up) moveBy(0, -speed);
+    	else if(event->key() == Qt::Key_Down) moveBy(0, speed);
 }
 
-int Character::getHealth() const {
-	return health;
+void Character::scoreInc(int amount) {
+    score += amount;
 }
-
-string Character::getName() const {
-	return name;
-}
-
-void Character::takeDamage(int damage) {
-	if(health - damage <= 0) {
-		health = 0;
-		cout << name << " has been defeated." << endl;
-	} else { 
-		health -= damage;
-		cout << name << " has " << health << " health remaining." << endl;
-	}
-}
-
-void Character::keyPressEvent(QKeyEvent *event){
-	if(event->key() == Qt::Key_Left)
-		moveBy(-10,0);
-}
-
-
-bool Character::isAlive() const {
-	if(health > 0) return true;
-	else return false;
-}
-
-int Character::getCharacterCount() {
-	return characterCount;
-}
-

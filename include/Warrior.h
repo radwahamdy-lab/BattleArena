@@ -2,6 +2,7 @@
 #include <QPixmap>
 #include <QPainter>
 
+<<<<<<< HEAD
 class Warrior : public QGraphicsItem {
 public:
     Warrior() {
@@ -21,3 +22,11 @@ public:
 private:
     QPixmap pixmap;
 };
+=======
+class Warrior : public Character {
+	public:
+        Warrior();
+        void attack(bool isSpecial) override;
+};
+#endif
+>>>>>>> 04647ee6b9033dee857a1f8d951387c2bd349fc3
