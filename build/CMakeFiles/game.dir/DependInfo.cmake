@@ -8,7 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/gui/main.cpp" "CMakeFiles/game.dir/gui/main.cpp.o" "gcc" "CMakeFiles/game.dir/gui/main.cpp.o.d"
+  "/home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d"
+  "/home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
+  "/home/drrad/BattleArena/gui/Character.cpp" "CMakeFiles/game.dir/gui/Character.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Character.cpp.o.d"
+  "/home/drrad/BattleArena/gui/GameScreen.cpp" "CMakeFiles/game.dir/gui/GameScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
+  "/home/drrad/BattleArena/gui/Projectile.cpp" "CMakeFiles/game.dir/gui/Projectile.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"
+  "/home/drrad/BattleArena/gui/StartScreen.cpp" "CMakeFiles/game.dir/gui/StartScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/StartScreen.cpp.o.d"
+  "/home/drrad/BattleArena/gui/main.cpp" "CMakeFiles/game.dir/gui/main.cpp.o" "gcc" "CMakeFiles/game.dir/gui/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

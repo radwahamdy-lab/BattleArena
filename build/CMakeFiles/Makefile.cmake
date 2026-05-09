@@ -7,7 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/CMakeLists.txt"
+  "/home/drrad/BattleArena/CMakeLists.txt"
+  "/home/drrad/BattleArena/assets/resources.qrc"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
@@ -150,6 +151,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/game_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -157,4 +160,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/game.dir/DependInfo.cmake"
+  "CMakeFiles/game_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/game_autogen.dir/DependInfo.cmake"
   )

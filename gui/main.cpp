@@ -6,15 +6,18 @@
 #include <QMainWindow>
 #include "StartScreen.h"
 #include "CharacterScreen.h"
+#include "GameScreen.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    int playerCharacter = 2;
+    int compCharacter = 2;
 
     // Configuring Window
     QMainWindow w;
     w.setWindowTitle("Battle Arena");
-    w.resize(400, 300);
+    w.resize(900, 650);
 
     QWidget *centralWidget = new QWidget(&w);
     QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
@@ -22,11 +25,12 @@ int main(int argc, char *argv[])
     QStackedWidget *stackedWidget = new QStackedWidget;
 
     StartScreen startPage(stackedWidget, &a);
-    CharacterScreen characterPage(stackedWidget);
+    GameScreen gamePage(stackedWidget, playerCharacter, compCharacter);
+
 
     // Add Views to Stacked Widget
     stackedWidget->addWidget(startPage.getPage());
-    stackedWidget->addWidget(characterPage.getPage());
+    stackedWidget->addWidget(gamePage.getPage());
 
     // Display the first view
     stackedWidget->setCurrentIndex(0);

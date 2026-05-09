@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena"
+CMAKE_SOURCE_DIR = /home/drrad/BattleArena
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build"
+CMAKE_BINARY_DIR = /home/drrad/BattleArena/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/game.dir/depend.make
@@ -69,28 +69,138 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/resources.qrc
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/grass_block.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Archer_Run.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Arrow.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Archer_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Run.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for assets/resources.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json 
+
+CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: game_autogen/mocs_compilation.cpp
+CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o -MF CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o -c /home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp
+
+CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp > CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp -o CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/game.dir/gui/main.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/gui/main.cpp.o: /mnt/c/Users/drrad/uni/1st\ Year/CS\ 2/BattleArena/gui/main.cpp
+CMakeFiles/game.dir/gui/main.cpp.o: /home/drrad/BattleArena/gui/main.cpp
 CMakeFiles/game.dir/gui/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/gui/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/main.cpp.o -MF CMakeFiles/game.dir/gui/main.cpp.o.d -o CMakeFiles/game.dir/gui/main.cpp.o -c "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/gui/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/gui/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/main.cpp.o -MF CMakeFiles/game.dir/gui/main.cpp.o.d -o CMakeFiles/game.dir/gui/main.cpp.o -c /home/drrad/BattleArena/gui/main.cpp
 
 CMakeFiles/game.dir/gui/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/gui/main.cpp" > CMakeFiles/game.dir/gui/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/main.cpp > CMakeFiles/game.dir/gui/main.cpp.i
 
 CMakeFiles/game.dir/gui/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/gui/main.cpp" -o CMakeFiles/game.dir/gui/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/main.cpp -o CMakeFiles/game.dir/gui/main.cpp.s
+
+CMakeFiles/game.dir/gui/StartScreen.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/StartScreen.cpp.o: /home/drrad/BattleArena/gui/StartScreen.cpp
+CMakeFiles/game.dir/gui/StartScreen.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/gui/StartScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/StartScreen.cpp.o -MF CMakeFiles/game.dir/gui/StartScreen.cpp.o.d -o CMakeFiles/game.dir/gui/StartScreen.cpp.o -c /home/drrad/BattleArena/gui/StartScreen.cpp
+
+CMakeFiles/game.dir/gui/StartScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/StartScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/StartScreen.cpp > CMakeFiles/game.dir/gui/StartScreen.cpp.i
+
+CMakeFiles/game.dir/gui/StartScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/StartScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/StartScreen.cpp -o CMakeFiles/game.dir/gui/StartScreen.cpp.s
+
+CMakeFiles/game.dir/gui/GameScreen.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/GameScreen.cpp.o: /home/drrad/BattleArena/gui/GameScreen.cpp
+CMakeFiles/game.dir/gui/GameScreen.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/gui/GameScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/GameScreen.cpp.o -MF CMakeFiles/game.dir/gui/GameScreen.cpp.o.d -o CMakeFiles/game.dir/gui/GameScreen.cpp.o -c /home/drrad/BattleArena/gui/GameScreen.cpp
+
+CMakeFiles/game.dir/gui/GameScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/GameScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/GameScreen.cpp > CMakeFiles/game.dir/gui/GameScreen.cpp.i
+
+CMakeFiles/game.dir/gui/GameScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/GameScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/GameScreen.cpp -o CMakeFiles/game.dir/gui/GameScreen.cpp.s
+
+CMakeFiles/game.dir/gui/Character.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/Character.cpp.o: /home/drrad/BattleArena/gui/Character.cpp
+CMakeFiles/game.dir/gui/Character.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/gui/Character.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/Character.cpp.o -MF CMakeFiles/game.dir/gui/Character.cpp.o.d -o CMakeFiles/game.dir/gui/Character.cpp.o -c /home/drrad/BattleArena/gui/Character.cpp
+
+CMakeFiles/game.dir/gui/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/Character.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/Character.cpp > CMakeFiles/game.dir/gui/Character.cpp.i
+
+CMakeFiles/game.dir/gui/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Character.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/Character.cpp -o CMakeFiles/game.dir/gui/Character.cpp.s
+
+CMakeFiles/game.dir/gui/Projectile.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/Projectile.cpp.o: /home/drrad/BattleArena/gui/Projectile.cpp
+CMakeFiles/game.dir/gui/Projectile.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/gui/Projectile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/Projectile.cpp.o -MF CMakeFiles/game.dir/gui/Projectile.cpp.o.d -o CMakeFiles/game.dir/gui/Projectile.cpp.o -c /home/drrad/BattleArena/gui/Projectile.cpp
+
+CMakeFiles/game.dir/gui/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/Projectile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/Projectile.cpp > CMakeFiles/game.dir/gui/Projectile.cpp.i
+
+CMakeFiles/game.dir/gui/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Projectile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/Projectile.cpp -o CMakeFiles/game.dir/gui/Projectile.cpp.s
+
+CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: game_autogen/GBFAFXFCVO/qrc_resources.cpp
+CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -MF CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d -o CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -c /home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp
+
+CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp > CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+
+CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp -o CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
-"CMakeFiles/game.dir/gui/main.cpp.o"
+"CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/game.dir/gui/main.cpp.o" \
+"CMakeFiles/game.dir/gui/StartScreen.cpp.o" \
+"CMakeFiles/game.dir/gui/GameScreen.cpp.o" \
+"CMakeFiles/game.dir/gui/Character.cpp.o" \
+"CMakeFiles/game.dir/gui/Projectile.cpp.o" \
+"CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
+game: CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o
 game: CMakeFiles/game.dir/gui/main.cpp.o
+game: CMakeFiles/game.dir/gui/StartScreen.cpp.o
+game: CMakeFiles/game.dir/gui/GameScreen.cpp.o
+game: CMakeFiles/game.dir/gui/Character.cpp.o
+game: CMakeFiles/game.dir/gui/Projectile.cpp.o
+game: CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 game: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -98,7 +208,7 @@ game: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 game: /usr/lib/x86_64-linux-gnu/libGLX.so
 game: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,7 +219,7 @@ CMakeFiles/game.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/game.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/game.dir/clean
 
-CMakeFiles/game.dir/depend:
-	cd "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles/game.dir/DependInfo.cmake" "--color=$(COLOR)"
+CMakeFiles/game.dir/depend: game_autogen/GBFAFXFCVO/qrc_resources.cpp
+	cd /home/drrad/BattleArena/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrad/BattleArena /home/drrad/BattleArena /home/drrad/BattleArena/build /home/drrad/BattleArena/build /home/drrad/BattleArena/build/CMakeFiles/game.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/game.dir/depend
 

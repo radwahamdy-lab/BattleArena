@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "/home/drrad/BattleArena/build/game_autogen",
+	"CMAKE_BINARY_DIR" : "/home/drrad/BattleArena/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/drrad/BattleArena/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/drrad/BattleArena",
+	"CMAKE_SOURCE_DIR" : "/home/drrad/BattleArena",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/drrad/BattleArena/build/game_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/drrad/BattleArena/assets/grass_block.png",
+		"/home/drrad/BattleArena/assets/characters/Archer/Archer_Run.png",
+		"/home/drrad/BattleArena/assets/characters/Archer/Arrow.png",
+		"/home/drrad/BattleArena/assets/characters/Archer/Archer_Idle.png",
+		"/home/drrad/BattleArena/assets/characters/Warrior/Warrior_Idle.png",
+		"/home/drrad/BattleArena/assets/characters/Warrior/Warrior_Run.png",
+		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Idle.png",
+		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png"
+	],
+	"LOCK_FILE" : "/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "GBFAFXFCVO",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Used.txt",
+	"SOURCE" : "/home/drrad/BattleArena/assets/resources.qrc",
+	"VERBOSITY" : 0
+}

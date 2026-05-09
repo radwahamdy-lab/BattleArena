@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena"
+CMAKE_SOURCE_DIR = /home/drrad/BattleArena
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build"
+CMAKE_BINARY_DIR = /home/drrad/BattleArena/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/drrad/BattleArena/build/CMakeFiles /home/drrad/BattleArena/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/drrad/BattleArena/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,176 @@ game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
 
+#=============================================================================
+# Target rules for targets named game_autogen_timestamp_deps
+
+# Build rule for target.
+game_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game_autogen_timestamp_deps
+.PHONY : game_autogen_timestamp_deps
+
+# fast build rule for target.
+game_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_autogen_timestamp_deps.dir/build.make CMakeFiles/game_autogen_timestamp_deps.dir/build
+.PHONY : game_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named game_autogen
+
+# Build rule for target.
+game_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game_autogen
+.PHONY : game_autogen
+
+# fast build rule for target.
+game_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_autogen.dir/build.make CMakeFiles/game_autogen.dir/build
+.PHONY : game_autogen/fast
+
+game_autogen/GBFAFXFCVO/qrc_resources.o: game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.o
+
+# target to build an object file
+game_autogen/GBFAFXFCVO/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+
+game_autogen/GBFAFXFCVO/qrc_resources.i: game_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.i
+
+# target to preprocess a source file
+game_autogen/GBFAFXFCVO/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+
+game_autogen/GBFAFXFCVO/qrc_resources.s: game_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.s
+
+# target to generate assembly for a file
+game_autogen/GBFAFXFCVO/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+.PHONY : game_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+
+game_autogen/mocs_compilation.o: game_autogen/mocs_compilation.cpp.o
+.PHONY : game_autogen/mocs_compilation.o
+
+# target to build an object file
+game_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o
+.PHONY : game_autogen/mocs_compilation.cpp.o
+
+game_autogen/mocs_compilation.i: game_autogen/mocs_compilation.cpp.i
+.PHONY : game_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+game_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.i
+.PHONY : game_autogen/mocs_compilation.cpp.i
+
+game_autogen/mocs_compilation.s: game_autogen/mocs_compilation.cpp.s
+.PHONY : game_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+game_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.s
+.PHONY : game_autogen/mocs_compilation.cpp.s
+
+gui/Character.o: gui/Character.cpp.o
+.PHONY : gui/Character.o
+
+# target to build an object file
+gui/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Character.cpp.o
+.PHONY : gui/Character.cpp.o
+
+gui/Character.i: gui/Character.cpp.i
+.PHONY : gui/Character.i
+
+# target to preprocess a source file
+gui/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Character.cpp.i
+.PHONY : gui/Character.cpp.i
+
+gui/Character.s: gui/Character.cpp.s
+.PHONY : gui/Character.s
+
+# target to generate assembly for a file
+gui/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Character.cpp.s
+.PHONY : gui/Character.cpp.s
+
+gui/GameScreen.o: gui/GameScreen.cpp.o
+.PHONY : gui/GameScreen.o
+
+# target to build an object file
+gui/GameScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/GameScreen.cpp.o
+.PHONY : gui/GameScreen.cpp.o
+
+gui/GameScreen.i: gui/GameScreen.cpp.i
+.PHONY : gui/GameScreen.i
+
+# target to preprocess a source file
+gui/GameScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/GameScreen.cpp.i
+.PHONY : gui/GameScreen.cpp.i
+
+gui/GameScreen.s: gui/GameScreen.cpp.s
+.PHONY : gui/GameScreen.s
+
+# target to generate assembly for a file
+gui/GameScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/GameScreen.cpp.s
+.PHONY : gui/GameScreen.cpp.s
+
+gui/Projectile.o: gui/Projectile.cpp.o
+.PHONY : gui/Projectile.o
+
+# target to build an object file
+gui/Projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Projectile.cpp.o
+.PHONY : gui/Projectile.cpp.o
+
+gui/Projectile.i: gui/Projectile.cpp.i
+.PHONY : gui/Projectile.i
+
+# target to preprocess a source file
+gui/Projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Projectile.cpp.i
+.PHONY : gui/Projectile.cpp.i
+
+gui/Projectile.s: gui/Projectile.cpp.s
+.PHONY : gui/Projectile.s
+
+# target to generate assembly for a file
+gui/Projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Projectile.cpp.s
+.PHONY : gui/Projectile.cpp.s
+
+gui/StartScreen.o: gui/StartScreen.cpp.o
+.PHONY : gui/StartScreen.o
+
+# target to build an object file
+gui/StartScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/StartScreen.cpp.o
+.PHONY : gui/StartScreen.cpp.o
+
+gui/StartScreen.i: gui/StartScreen.cpp.i
+.PHONY : gui/StartScreen.i
+
+# target to preprocess a source file
+gui/StartScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/StartScreen.cpp.i
+.PHONY : gui/StartScreen.cpp.i
+
+gui/StartScreen.s: gui/StartScreen.cpp.s
+.PHONY : gui/StartScreen.s
+
+# target to generate assembly for a file
+gui/StartScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/StartScreen.cpp.s
+.PHONY : gui/StartScreen.cpp.s
+
 gui/main.o: gui/main.cpp.o
 .PHONY : gui/main.o
 
@@ -161,7 +331,27 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... game_autogen"
+	@echo "... game_autogen_timestamp_deps"
 	@echo "... game"
+	@echo "... game_autogen/GBFAFXFCVO/qrc_resources.o"
+	@echo "... game_autogen/GBFAFXFCVO/qrc_resources.i"
+	@echo "... game_autogen/GBFAFXFCVO/qrc_resources.s"
+	@echo "... game_autogen/mocs_compilation.o"
+	@echo "... game_autogen/mocs_compilation.i"
+	@echo "... game_autogen/mocs_compilation.s"
+	@echo "... gui/Character.o"
+	@echo "... gui/Character.i"
+	@echo "... gui/Character.s"
+	@echo "... gui/GameScreen.o"
+	@echo "... gui/GameScreen.i"
+	@echo "... gui/GameScreen.s"
+	@echo "... gui/Projectile.o"
+	@echo "... gui/Projectile.i"
+	@echo "... gui/Projectile.s"
+	@echo "... gui/StartScreen.o"
+	@echo "... gui/StartScreen.i"
+	@echo "... gui/StartScreen.s"
 	@echo "... gui/main.o"
 	@echo "... gui/main.i"
 	@echo "... gui/main.s"

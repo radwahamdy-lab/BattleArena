@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena
+# Install script for directory: /home/drrad/BattleArena
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/drrad/uni/1st Year/CS 2/BattleArena/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/drrad/BattleArena/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
