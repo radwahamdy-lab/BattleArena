@@ -4,6 +4,7 @@
 #include <QGraphicsScene>
 #include "Character.h"
 #include "Projectile.h"
+#include <QDebug>
 
 #include <iostream>
 using namespace std;
@@ -47,6 +48,7 @@ QPixmap* Character::getPixmaps(){
 }
 
 void Character::keyPressEvent(QKeyEvent *event) {
+    qDebug() << "KEY PRESSED";
     if (event->key() == Qt::Key_Space){
         if(character != WARRIOR)
             Projectile* projectile = new Projectile(scene, enemy, this, 1);

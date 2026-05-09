@@ -50,6 +50,9 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
 
     layout->addWidget(view);
     view->show();
+    view->setFocusPolicy(Qt::StrongFocus);
+    view->setFocus();
+    player->setFocus();
 
 }
 

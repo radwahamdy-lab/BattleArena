@@ -11,6 +11,7 @@ class Projectile : public QObject, public QGraphicsPixmapItem {
 public:
     Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, int inc);
     void attack();
+    void close_attack();
 
 private slots:
     void step();  // Called by timer each tick

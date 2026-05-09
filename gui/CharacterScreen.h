@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "game.h"
+#include "GameScreen.h"
 
 class CharacterScreen {
 	private:

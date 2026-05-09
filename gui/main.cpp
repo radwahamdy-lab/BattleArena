@@ -7,7 +7,7 @@
 #include "StartScreen.h"
 #include "CharacterScreen.h"
 #include "GameScreen.h"
-#include "Game.h"
+#include "game.h"
 
 int main(int argc, char *argv[])
 {

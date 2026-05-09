@@ -24,3 +24,5 @@ class GameScreen {
         void updateTimer(QString text);
 
 };
+
+#endif

@@ -65,7 +65,7 @@ bool Projectile::isCollide() {
     if(character!=2)
         colliding = collidingItems();
     else
-        colliding = src->collidingItems();
+        colliding = source->collidingItems();
 
     for (QGraphicsItem* item : colliding) {
         if (item == target) return true;
