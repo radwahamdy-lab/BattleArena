@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QTimer>
 #include "Character.h"
+#include "Scoreboard.h"
 
 class GameScreen {
 	private:
@@ -12,6 +13,7 @@ class GameScreen {
 		int time = 180;
 		Character *player;
 		Character *comp;
+        Scoreboard* scoreboard;
 	public:
 		GameScreen(QStackedWidget*, int, int);
 		QWidget* getPage();

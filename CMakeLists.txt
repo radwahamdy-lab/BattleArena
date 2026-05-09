@@ -16,6 +16,7 @@ add_executable(
     gui/Projectile.h
     gui/Projectile.cpp
     assets/resources.qrc
+    gui/Scoreboard.h gui/Scoreboard.cpp
 )
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 target_link_libraries(game PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)

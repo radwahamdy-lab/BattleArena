@@ -11,8 +11,10 @@
 #include <QString>
 #include <QFont>
 #include <string>
-using namespace std;
+#include "Scoreboard.h"
 #include "Character.h"
+using namespace std;
+
 
 GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int compCharacter){
     QVBoxLayout* layout = new QVBoxLayout(gamePage);
@@ -59,6 +61,8 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
 
     player->setEnemy(comp);
     comp->setEnemy(player);
+
+    scoreboard = new Scoreboard(scene, player, comp);
 
     view->setCacheMode(QGraphicsView::CacheBackground);
 
