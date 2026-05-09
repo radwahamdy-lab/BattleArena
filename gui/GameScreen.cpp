@@ -1,4 +1,5 @@
 #include "GameScreen.h"
+#include "Character.h"
 #include <QStackedWidget>
 #include <QApplication>
 #include <QGraphicsScene>
@@ -12,7 +13,7 @@
 #include <QFont>
 #include <string>
 using namespace std;
-#include "Character.h"
+
 
 GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int compCharacter){
     QVBoxLayout* layout = new QVBoxLayout(gamePage);
@@ -41,7 +42,8 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
             time--;
             int minutes = this->time/60;
             int seconds = this->time%60;
-            string time_str = to_string(minutes) + ":" + to_string(seconds);
+            string seconds_str = to_string(seconds).length()==1 ? "0"+to_string(seconds) : to_string(seconds);
+            string time_str = to_string(minutes) + ":" + seconds_str;
             QString time_qt = QString::fromStdString(time_str);
             timerText->setPlainText(time_qt);
             sec->start(1000);
@@ -50,11 +52,11 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     sec->start(1000);
 
     // Creating Character
-    player = new Character(scene, 2, false);
+    player = new Character(scene, playerCharacter, false);
     scene->addItem(player);
     player->setFocus();
 
-    comp = new Character(scene, 2, true);
+    comp = new Character(scene, compCharacter, true);
     scene->addItem(comp);
 
     player->setEnemy(comp);

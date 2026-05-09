@@ -1,28 +1,42 @@
 #include "Projectile.h"
 #include <QGraphicsScene>
+#include <QRectF>
+#include <QPointF>
+#include <iostream>
+using namespace std;
 
 Projectile::Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, int inc) : QGraphicsPixmapItem(), scene(sc), target(tar), source(src), scoreInc(inc), character(src->getCharacter()), direction(src->getDirection()) {
     timer = new QTimer(this);
 
     if(character != 2){
-        setPos(source->x(), source->y());
         if(character == 1) setPixmap(arrow);
         else setPixmap(magic);
+
+        // Projectile Position
+        QRectF charRect = source->boundingRect();
+        QPointF charPos = source->scenePos();
+        qreal spawnX = charPos.x() + charRect.width();
+        qreal spawnY = charPos.y() + (charRect.height() / 2.0);
+        qreal finalY = spawnY - (boundingRect().height() / 2.0);
+        setPos(spawnX, finalY);
+        
         setZValue(1);
         scene->addItem(this);
         timer->start(16);
         connect(timer, &QTimer::timeout, this, &Projectile::step);
-    } else 
-        close_attack();
+    } else close_attack();
         
 }
 
 void Projectile::close_attack() {
-    source->setPixmap(source->getPixmaps()[2]);
-    source->setPixmap(source->getPixmaps()[3]);
-    timer->start(16);
+    timer->start(160);
+    int i=1;
     while(timer->remainingTime() > 0){
-        if(isCollide()) source->setScore(source->getScore() + scoreInc);
+        if(isCollide() && !collided) {
+            source->setScore(source->getScore() + scoreInc);
+            cout << "warrior score increased" << i++ << endl;
+            collided = true;
+        }
     }
 }
 
@@ -66,7 +80,7 @@ bool Projectile::isCollide() {
     if(character!=2)
         colliding = collidingItems();
     else
-        colliding = src->collidingItems();
+        colliding = source->collidingItems();
 
     for (QGraphicsItem* item : colliding) {
         if (item == target) return true;
