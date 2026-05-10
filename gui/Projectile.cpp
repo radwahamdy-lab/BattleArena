@@ -1,4 +1,3 @@
-
 #include "Projectile.h"
 #include <QGraphicsScene>
 #include <QRectF>
@@ -9,14 +8,18 @@ using namespace std;
 Projectile::Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, int inc) : QGraphicsPixmapItem(), scene(sc), target(tar), source(src), scoreInc(inc), character(src->getCharacter()), direction(src->getDirection()) {
     timer = new QTimer(this);
 
-    if(character != 2){
-        if(character == 1) setPixmap(arrow);
+    if(character != 1){
+        if(character == 2) setPixmap(arrow);
         else setPixmap(magic);
 
         // Projectile Position
         QRectF charRect = source->boundingRect();
         QPointF charPos = source->scenePos();
-        qreal spawnX = charPos.x() + charRect.width();
+        qreal spawnX;
+        if(direction==1)
+            spawnX = charPos.x() + charRect.width();
+        else
+            spawnX = charPos.x();
         qreal spawnY = charPos.y() + (charRect.height() / 2.0);
         qreal finalY = spawnY - (boundingRect().height() / 2.0);
         setPos(spawnX, finalY);
@@ -25,17 +28,18 @@ Projectile::Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, i
         scene->addItem(this);
         timer->start(16);
         connect(timer, &QTimer::timeout, this, &Projectile::step);
-    } else close_attack();
+    } else{
+        close_attack();
+        collided = false;
+    }
         
 }
 
 void Projectile::close_attack() {
     timer->start(160);
-    int i=1;
     while(timer->remainingTime() > 0){
         if(isCollide() && !collided) {
-            source->setScore(source->getScore() + scoreInc);
-            cout << "warrior score increased" << i++ << endl;
+            source->setScore(source->getScore() + scoreInc); 
             collided = true;
         }
     }
@@ -49,26 +53,16 @@ void Projectile::step() {
             moveBy(speed, 0);   
             break;  // Right
         case 2: 
-            setTransformOriginPoint(pixmap().rect().center());
-            setRotation(-90);
-            moveBy(0, -speed);  
-            break;  // Up
-        case 3: 
             setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
             moveBy(-speed, 0);  
             break;  // Left
-        default: 
-            setTransformOriginPoint(pixmap().rect().center());
-            setRotation(90);
-            moveBy(0, speed);  
-            break;  // Down
     }
 
     if (isCollide()) {
         timer->stop();
         source->setScore(source->getScore() + scoreInc);
         scene->removeItem(this);
-        deleteLater();  // Safe async delete for QObject
+        deleteLater();
     } else if (isOut()) {
         timer->stop();
         scene->removeItem(this);
@@ -78,7 +72,7 @@ void Projectile::step() {
 
 bool Projectile::isCollide() {
     QList<QGraphicsItem*> colliding;
-    if(character!=2)
+    if(character!=1)
         colliding = collidingItems();
     else
         colliding = source->collidingItems();
