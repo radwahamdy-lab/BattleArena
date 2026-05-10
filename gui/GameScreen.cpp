@@ -1,4 +1,3 @@
-
 #include "GameScreen.h"
 #include "Character.h"
 #include <QStackedWidget>

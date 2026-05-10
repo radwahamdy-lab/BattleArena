@@ -1,4 +1,6 @@
 #include "Scoreboard.h"
+#include "Character.h"
+#include <QObject>
 
 Scoreboard::Scoreboard(QGraphicsScene* scene, Character* player, Character* enemy)
 {
@@ -21,8 +23,10 @@ Scoreboard::Scoreboard(QGraphicsScene* scene, Character* player, Character* enem
 
     scene->addItem(playerScoreText);
     scene->addItem(enemyScoreText);
-
     updateScores();
+    QObject::connect(player, &Character::scoreChanged, this, &Scoreboard::updateScores);
+    QObject::connect(enemy, &Character::scoreChanged, this, &Scoreboard::updateScores);
+
 }
 
 void Scoreboard::updateScores()

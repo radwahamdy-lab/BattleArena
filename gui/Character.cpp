@@ -1,4 +1,3 @@
-
 #include <QGraphicsPixmapItem>
 #include <QKeyEvent>
 #include <QPixmap>
@@ -10,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QGraphicsPixmapItem(), scene(sc), character(chr) {
+Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGraphicsPixmapItem(), scene(sc), character(chr) {
     if(!isComp){
         setFlag(QGraphicsItem::ItemIsFocusable);
         setPos(0,0);
@@ -28,6 +27,7 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QGraphicsPixmap
 
 void Character::setScore(int s){
     score = s;
+    emit scoreChanged();
 }
 
 int Character::getScore(){

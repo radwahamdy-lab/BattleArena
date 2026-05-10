@@ -1,10 +1,12 @@
-
 #pragma once
 #include <QGraphicsPixmapItem>
 #include <QKeyEvent>
 #include <QPixmap>
+#include <QObject>
 
-class Character : public QGraphicsPixmapItem {
+class Character : public QObject, public QGraphicsPixmapItem {
+    Q_OBJECT
+
     public:
         Character(QGraphicsScene*, int, bool);
         void setScore(int s);
@@ -37,6 +39,9 @@ class Character : public QGraphicsPixmapItem {
         int character;
         int direction;
         int score = 0;
+
+    signals:
+        void scoreChanged();
 
 };
 

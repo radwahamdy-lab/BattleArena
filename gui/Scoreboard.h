@@ -6,17 +6,17 @@
 #include <QString>
 #include "Character.h"
 
-class Scoreboard
-{
-private:
-    QGraphicsTextItem* playerScoreText;
-    QGraphicsTextItem* enemyScoreText;
+class Scoreboard : public QObject {
+    Q_OBJECT
+    private:
+        QGraphicsTextItem* playerScoreText;
+        QGraphicsTextItem* enemyScoreText;
 
-    Character* player;
-    Character* enemy;
+        Character* player;
+        Character* enemy;
 
-public:
-    Scoreboard(QGraphicsScene* scene, Character* player, Character* enemy);
-
-    void updateScores();
+    public:
+        Scoreboard(QGraphicsScene* scene, Character* player, Character* enemy);
+    public slots:
+        void updateScores();
 };

@@ -1,4 +1,3 @@
-
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
@@ -18,7 +17,6 @@ add_executable(
     gui/Projectile.cpp
     assets/resources.qrc
     gui/Scoreboard.h gui/Scoreboard.cpp
-    gui/game.h gui/game.cpp
 )
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 target_link_libraries(game PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)

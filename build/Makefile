@@ -275,6 +275,30 @@ gui/Projectile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Projectile.cpp.s
 .PHONY : gui/Projectile.cpp.s
 
+gui/Scoreboard.o: gui/Scoreboard.cpp.o
+.PHONY : gui/Scoreboard.o
+
+# target to build an object file
+gui/Scoreboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.o
+.PHONY : gui/Scoreboard.cpp.o
+
+gui/Scoreboard.i: gui/Scoreboard.cpp.i
+.PHONY : gui/Scoreboard.i
+
+# target to preprocess a source file
+gui/Scoreboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.i
+.PHONY : gui/Scoreboard.cpp.i
+
+gui/Scoreboard.s: gui/Scoreboard.cpp.s
+.PHONY : gui/Scoreboard.s
+
+# target to generate assembly for a file
+gui/Scoreboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.s
+.PHONY : gui/Scoreboard.cpp.s
+
 gui/StartScreen.o: gui/StartScreen.cpp.o
 .PHONY : gui/StartScreen.o
 
@@ -349,6 +373,9 @@ help:
 	@echo "... gui/Projectile.o"
 	@echo "... gui/Projectile.i"
 	@echo "... gui/Projectile.s"
+	@echo "... gui/Scoreboard.o"
+	@echo "... gui/Scoreboard.i"
+	@echo "... gui/Scoreboard.s"
 	@echo "... gui/StartScreen.o"
 	@echo "... gui/StartScreen.i"
 	@echo "... gui/StartScreen.s"

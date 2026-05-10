@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'Projectile.h'
+** Meta object code from reading C++ file 'Character.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
@@ -7,10 +7,10 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../gui/Projectile.h"
+#include "../../../gui/Character.h"
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'Projectile.h' doesn't include <QObject>."
+#error "The header file 'Character.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -25,28 +25,28 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_Projectile_t {
+struct qt_meta_stringdata_Character_t {
     uint offsetsAndSizes[6];
-    char stringdata0[11];
-    char stringdata1[5];
+    char stringdata0[10];
+    char stringdata1[13];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_Projectile_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_Projectile_t qt_meta_stringdata_Projectile = {
+    uint(sizeof(qt_meta_stringdata_Character_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_Character_t qt_meta_stringdata_Character = {
     {
-        QT_MOC_LITERAL(0, 10),  // "Projectile"
-        QT_MOC_LITERAL(11, 4),  // "step"
-        QT_MOC_LITERAL(16, 0)   // ""
+        QT_MOC_LITERAL(0, 9),  // "Character"
+        QT_MOC_LITERAL(10, 12),  // "scoreChanged"
+        QT_MOC_LITERAL(23, 0)   // ""
     },
-    "Projectile",
-    "step",
+    "Character",
+    "scoreChanged",
     ""
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_Projectile[] = {
+Q_CONSTINIT static const uint qt_meta_data_Character[] = {
 
  // content:
       10,       // revision
@@ -57,61 +57,70 @@ Q_CONSTINIT static const uint qt_meta_data_Projectile[] = {
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
 
- // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x08,    1 /* Private */,
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   20,    2, 0x06,    1 /* Public */,
 
- // slots: parameters
+ // signals: parameters
     QMetaType::Void,
 
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject Projectile::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject Character::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_Projectile.offsetsAndSizes,
-    qt_meta_data_Projectile,
+    qt_meta_stringdata_Character.offsetsAndSizes,
+    qt_meta_data_Character,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_Projectile_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_Character_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<Projectile, std::true_type>,
-        // method 'step'
+        QtPrivate::TypeAndForceComplete<Character, std::true_type>,
+        // method 'scoreChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void Projectile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Character::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Projectile *>(_o);
+        auto *_t = static_cast<Character *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->step(); break;
+        case 0: _t->scoreChanged(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (Character::*)();
+            if (_t _q_method = &Character::scoreChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
         }
     }
     (void)_a;
 }
 
-const QMetaObject *Projectile::metaObject() const
+const QMetaObject *Character::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Projectile::qt_metacast(const char *_clname)
+void *Character::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Projectile.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Character.stringdata0))
         return static_cast<void*>(this);
     if (!strcmp(_clname, "QGraphicsPixmapItem"))
         return static_cast< QGraphicsPixmapItem*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int Projectile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Character::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -126,6 +135,12 @@ int Projectile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     }
     return _id;
+}
+
+// SIGNAL 0
+void Character::scoreChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
