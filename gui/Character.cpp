@@ -20,8 +20,17 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
         setPos(600,0);
         direction = 2;
         QTimer* movement_timer = new QTimer();
+        QTimer* shooting_timer = new QTimer();
         movement_timer->start(700);
+        shooting_timer->start(1500);
         QObject::connect(movement_timer, &QTimer::timeout, this, &Character::moveRandomly);
+        QObject::connect(shooting_timer, &QTimer::timeout, this, [this](){
+            shoot();
+            QTimer* timer = new QTimer();
+            timer->start(160);
+            while(timer->remainingTime() > 0){}
+            setPixmap(char_ptr[0]);
+        });
     }
     if(character == 1) char_ptr = warrior;
     else if(character == 2) char_ptr = archer;
@@ -108,14 +117,18 @@ void Character::move(int dir){
     }
 }
 
+void Character::shoot(){
+    setPixmap(char_ptr[2]);
+    if(direction==1)
+        setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+    else if(direction==2)
+        setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    Projectile* projectile = new Projectile(scene, enemy, this, 1);
+}
+
 void Character::keyPressEvent(QKeyEvent *event) {
     if (event->key() == Qt::Key_Space){
-        setPixmap(char_ptr[2]);
-        if(direction==1)
-            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
-        else if(direction==2)
-            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
-        Projectile* projectile = new Projectile(scene, enemy, this, 1);
+        shoot();
     } else {
         if (event->key() == Qt::Key_Left) {
             move(2);

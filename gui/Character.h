@@ -16,6 +16,7 @@ class Character : public QObject, public QGraphicsPixmapItem {
         QPixmap* getPixmaps();
         void setEnemy(QGraphicsItem*);
         void move(int dir);
+        void shoot();
         void moveRandomly();
     protected:
         void keyPressEvent(QKeyEvent *event);
