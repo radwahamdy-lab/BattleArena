@@ -4,8 +4,10 @@
         <file>grass_block.png</file>
         <file>characters/Archer/Archer_Idle.png</file>
         <file>characters/Archer/Archer_Run.png</file>
+        <file>characters/Archer/Archer_Attack.png</file>
         <file>characters/Mage/Mage_Idle.png</file>
         <file>characters/Mage/Mage_Run.png</file>
+        <file>characters/Mage/Mage_Attack.png</file>
         <file>characters/Mage/Magic.png</file>
         <file>characters/Warrior/Warrior_Run.png</file>
         <file>characters/Warrior/Warrior_Idle.png</file>

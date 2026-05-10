@@ -2,6 +2,7 @@
 #include <QKeyEvent>
 #include <QPixmap>
 #include <QGraphicsScene>
+#include <QObject>
 #include "Character.h"
 #include "Projectile.h"
 
@@ -48,13 +49,25 @@ QPixmap* Character::getPixmaps(){
 
 void Character::keyPressEvent(QKeyEvent *event) {
     if (event->key() == Qt::Key_Space){
-        if(character != 2)
-            Projectile* projectile = new Projectile(scene, enemy, this, 1);
-        else{
-            // Close Attack For Warrior
-            setPixmap(warrior[2]);
-
+        setPixmap(char_ptr[2]);
+        if(direction==1) {
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+            setTransformOriginPoint(pixmap().rect().center());
+            setRotation(0);
+        } else if(direction==2){
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+            setTransformOriginPoint(pixmap().rect().center());
+            setRotation(-90);
+        } else if(direction==3){
+            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+            setTransformOriginPoint(pixmap().rect().center());
+            setRotation(0);
+        } else {
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+            setTransformOriginPoint(pixmap().rect().center());
+            setRotation(90);
         }
+        Projectile* projectile = new Projectile(scene, enemy, this, 1);
     } else {
         setPixmap(char_ptr[1]);
         if (event->key() == Qt::Key_Left && x() >= 0) {
@@ -79,6 +92,12 @@ void Character::keyPressEvent(QKeyEvent *event) {
 }
 
 void Character::keyReleaseEvent(QKeyEvent *event) {
+    if(event->key() == Qt::Key_Space){
+        QTimer* timer = new QTimer();
+        timer->start(160);
+        while(timer->remainingTime() > 0){}
+        setPixmap(char_ptr[0]);
+    }
     setPixmap(char_ptr[0]);
     if(direction==1) {
         setPixmap(pixmap().transformed(QTransform().scale(1, 1)));

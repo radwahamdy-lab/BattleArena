@@ -74,10 +74,15 @@ game_autogen/GBFAFXFCVO/qrc_resources.cpp: CMakeFiles/game_autogen.dir/AutoRcc_r
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/grass_block.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Archer_Run.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Arrow.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Archer_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Archer/Archer_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Attack2.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Warrior/Warrior_Run.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Magic.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for assets/resources.qrc"

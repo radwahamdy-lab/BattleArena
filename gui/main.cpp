@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    int playerCharacter = 2;
+    int playerCharacter = 3;
     int compCharacter = 2;
 
     // Configuring Window
