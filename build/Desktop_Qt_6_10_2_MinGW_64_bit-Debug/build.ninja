@@ -105,6 +105,14 @@ build CMakeFiles/game.dir/gui/Scoreboard.cpp.obj: CXX_COMPILER__game_unscanned_D
   OBJECT_DIR = CMakeFiles\game.dir
   OBJECT_FILE_DIR = CMakeFiles\game.dir\gui
 
+build CMakeFiles/game.dir/gui/game.cpp.obj: CXX_COMPILER__game_unscanned_Debug C$:/Users/ahmad/Desktop/BattleArena/gui/game.cpp || cmake_object_order_depends_target_game
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\game.dir\gui\game.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ahmad/Desktop/BattleArena/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/game_autogen/include -IC:/Users/ahmad/Desktop/BattleArena/include -isystem C:/Qt/6.10.2/mingw_64/include/QtCore -isystem C:/Qt/6.10.2/mingw_64/include -isystem C:/Qt/6.10.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.2/mingw_64/include/QtGui -isystem C:/Qt/6.10.2/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\game.dir
+  OBJECT_FILE_DIR = CMakeFiles\game.dir\gui
+
 build CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.obj: CXX_COMPILER__game_unscanned_Debug C$:/Users/ahmad/Desktop/BattleArena/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/game_autogen/GBFAFXFCVO/qrc_resources.cpp || cmake_object_order_depends_target_game
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\game.dir\game_autogen\GBFAFXFCVO\qrc_resources.cpp.obj.d
@@ -121,7 +129,7 @@ build CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.obj: CXX_COM
 #############################################
 # Link the executable game.exe
 
-build game.exe: CXX_EXECUTABLE_LINKER__game_Debug CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.obj CMakeFiles/game.dir/gui/main.cpp.obj CMakeFiles/game.dir/gui/StartScreen.cpp.obj CMakeFiles/game.dir/gui/GameScreen.cpp.obj CMakeFiles/game.dir/gui/Character.cpp.obj CMakeFiles/game.dir/gui/Projectile.cpp.obj CMakeFiles/game.dir/gui/Scoreboard.cpp.obj CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a || game_autogen game_autogen_timestamp_deps
+build game.exe: CXX_EXECUTABLE_LINKER__game_Debug CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.obj CMakeFiles/game.dir/gui/main.cpp.obj CMakeFiles/game.dir/gui/StartScreen.cpp.obj CMakeFiles/game.dir/gui/GameScreen.cpp.obj CMakeFiles/game.dir/gui/Character.cpp.obj CMakeFiles/game.dir/gui/Projectile.cpp.obj CMakeFiles/game.dir/gui/Scoreboard.cpp.obj CMakeFiles/game.dir/gui/game.cpp.obj CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a || game_autogen game_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\game.dir
@@ -182,7 +190,7 @@ build game_autogen/timestamp game_autogen/mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Custom command for game_autogen\GBFAFXFCVO\qrc_resources.cpp
 
-build game_autogen/GBFAFXFCVO/qrc_resources.cpp | ${cmake_ninja_workdir}game_autogen/GBFAFXFCVO/qrc_resources.cpp: CUSTOM_COMMAND C$:/Users/ahmad/Desktop/BattleArena/assets/resources.qrc CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json C$:/Users/ahmad/Desktop/BattleArena/assets/grass_block.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Run.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Arrow.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Attack2.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Attack.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Run.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Magic.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Run.png C$:/Qt/6.10.2/mingw_64/bin/rcc.exe C$:/Qt/6.10.2/mingw_64/bin/rcc.exe || game_autogen game_autogen_timestamp_deps
+build game_autogen/GBFAFXFCVO/qrc_resources.cpp | ${cmake_ninja_workdir}game_autogen/GBFAFXFCVO/qrc_resources.cpp: CUSTOM_COMMAND C$:/Users/ahmad/Desktop/BattleArena/assets/resources.qrc CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json C$:/Users/ahmad/Desktop/BattleArena/assets/grass_block.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Run.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Arrow.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Attack.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Attack2.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Attack.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Run.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Magic.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Idle.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Attack.png C$:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Run.png C$:/Qt/6.10.2/mingw_64/bin/rcc.exe C$:/Qt/6.10.2/mingw_64/bin/rcc.exe || game_autogen game_autogen_timestamp_deps
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\ahmad\Desktop\BattleArena\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/ahmad/Desktop/BattleArena/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json Debug"
   DESC = Automatic RCC for assets/resources.qrc
   restat = 1

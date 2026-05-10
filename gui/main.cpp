@@ -7,6 +7,7 @@
 #include "StartScreen.h"
 #include "CharacterScreen.h"
 #include "GameScreen.h"
+#include "game.h"
 
 int main(int argc, char *argv[])
 {
@@ -25,12 +26,21 @@ int main(int argc, char *argv[])
     QStackedWidget *stackedWidget = new QStackedWidget;
 
     StartScreen startPage(stackedWidget, &a);
-    GameScreen gamePage(stackedWidget, playerCharacter, compCharacter);
+    CharacterScreen characterPage(stackedWidget);
 
 
     // Add Views to Stacked Widget
     stackedWidget->addWidget(startPage.getPage());
-    stackedWidget->addWidget(gamePage.getPage());
+    stackedWidget->addWidget(characterPage.getPage());
+
+    Game* game = new Game( // Temporary until character selection is connected properly
+        characterPage.getUserCharacter(),
+        characterPage.getComputerCharacter()
+        );
+
+    game->startGame();
+
+    stackedWidget->addWidget(game->getGameScreen()->getPage());
 
     // Display the first view
     stackedWidget->setCurrentIndex(0);

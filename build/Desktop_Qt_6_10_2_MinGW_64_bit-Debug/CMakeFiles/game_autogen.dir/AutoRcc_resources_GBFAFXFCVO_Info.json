@@ -12,6 +12,7 @@
 		"C:/Users/ahmad/Desktop/BattleArena/assets/grass_block.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Run.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Arrow.png",
+		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Attack.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Archer/Archer_Idle.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Attack2.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Idle.png",
@@ -19,6 +20,7 @@
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Warrior/Warrior_Run.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Magic.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Idle.png",
+		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Attack.png",
 		"C:/Users/ahmad/Desktop/BattleArena/assets/characters/Mage/Mage_Run.png"
 	],
 	"LOCK_FILE" : "C:/Users/ahmad/Desktop/BattleArena/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Lock.lock",

@@ -368,6 +368,12 @@
 			"Mu",
 			"DMHXEJ42XS/moc_StartScreen.cpp",
 			null
+		],
+		[
+			"C:/Users/ahmad/Desktop/BattleArena/gui/game.h",
+			"Mu",
+			"DMHXEJ42XS/moc_game.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -437,6 +443,7 @@
 		[ "C:/Users/ahmad/Desktop/BattleArena/gui/Projectile.cpp", "Mu", null ],
 		[ "C:/Users/ahmad/Desktop/BattleArena/gui/Scoreboard.cpp", "Mu", null ],
 		[ "C:/Users/ahmad/Desktop/BattleArena/gui/StartScreen.cpp", "Mu", null ],
+		[ "C:/Users/ahmad/Desktop/BattleArena/gui/game.cpp", "Mu", null ],
 		[ "C:/Users/ahmad/Desktop/BattleArena/gui/main.cpp", "Mu", null ]
 	],
 	"USE_BETTER_GRAPH" : true,
