@@ -1277,6 +1277,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 /home/drrad/BattleArena/gui/main.cpp
+/home/drrad/BattleArena/gui/Obstacle.cpp
 /home/drrad/BattleArena/gui/Character.h
  mmc:Q_OBJECT
  mdp:/home/drrad/BattleArena/build/game_autogen/moc_predefs.h
@@ -1696,4 +1697,3 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
-/home/drrad/BattleArena/gui/Obstacle.cpp

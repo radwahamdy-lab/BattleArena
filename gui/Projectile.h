@@ -20,6 +20,7 @@ private:
     bool isCollide();
     bool isOut();
     void close_attack();
+    bool collideObstacle();
 
     QPixmap arrow = QPixmap(":characters/Archer/Arrow.png");
     QPixmap magic = QPixmap(":characters/Mage/Magic.png");

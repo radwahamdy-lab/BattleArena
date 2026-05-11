@@ -16,7 +16,7 @@ class Obstacle : public QObject, public QGraphicsPixmapItem {
         bool isOnObstacle(QPointF);
     private:
         QGraphicsScene* scene;
-        QPixmap vertical1 = QPixmap(":walls/vertical_wall.png");
+        QPixmap vertical1 = QPixmap(":walls/Castle_vertical31.png");
 
 };
 

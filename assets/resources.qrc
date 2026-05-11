@@ -14,7 +14,8 @@
         <file>characters/Warrior/Warrior_Attack.png</file>
         <file>characters/Warrior/Warrior_Attack2.png</file>
         <file>characters/Archer/Arrow.png</file>
-        <file>walls/Castle_vertical1.png</file>
+        <file>walls/Castle_vertical11.png</file>
+        <file>walls/Castle_vertical31.png</file>
         <file>walls/vertical_wall.png</file>
     </qresource>
 </RCC>

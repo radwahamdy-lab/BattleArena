@@ -84,8 +84,9 @@ game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/charac
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Idle.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png
-game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/walls/Castle_vertical1.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/walls/vertical_wall.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/walls/Castle_vertical31.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/drrad/BattleArena/assets/walls/Castle_vertical11.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for assets/resources.qrc"
 	/usr/bin/cmake -E cmake_autorcc /home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json 

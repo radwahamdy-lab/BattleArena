@@ -63,7 +63,7 @@ void Projectile::step() {
         source->setScore(source->getScore() + scoreInc);
         scene->removeItem(this);
         deleteLater();
-    } else if (isOut()) {
+    } else if (isOut() || collideObstacle()) {
         timer->stop();
         scene->removeItem(this);
         deleteLater();
@@ -87,4 +87,14 @@ bool Projectile::isOut() {
     // Check if the projectile has left the scene bounds
     if (!scene) return true;
     return !scene->sceneRect().intersects(boundingRect().translated(pos()));
+}
+
+bool Projectile::collideObstacle(){
+    bool collides = false;
+    for(int i=0; i<source->obstacles.size() && !collides; i++){
+        if(collidesWithItem(source->obstacles[i])) {
+            collides=true;
+        }
+    }
+    return collides;
 }

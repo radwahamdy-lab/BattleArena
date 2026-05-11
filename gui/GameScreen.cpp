@@ -40,6 +40,7 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     timerText->setPos(350, 10);
     timerText->setPlainText("3:00");
     scene->addItem(timerText);
+    timerText->setZValue(1);
 
     // Creating Timer
     QTimer *sec = new QTimer();
