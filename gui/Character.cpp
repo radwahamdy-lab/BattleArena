@@ -21,15 +21,13 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
         direction = 2;
         QTimer* movement_timer = new QTimer();
         QTimer* shooting_timer = new QTimer();
-        movement_timer->start(700);
+        movement_timer->start(1000);
         shooting_timer->start(1500);
         QObject::connect(movement_timer, &QTimer::timeout, this, &Character::moveRandomly);
-        QObject::connect(shooting_timer, &QTimer::timeout, this, [this](){
-            shoot();
-            QTimer* timer = new QTimer();
-            timer->start(160);
-            while(timer->remainingTime() > 0){}
-            setPixmap(char_ptr[0]);
+        QObject::connect(shooting_timer, &QTimer::timeout, this, [this, movement_timer](){
+            if(movement_timer->isActive()){
+                shoot();
+            }   
         });
     }
     if(character == 1) char_ptr = warrior;
@@ -92,25 +90,25 @@ QPixmap* Character::getPixmaps(){
 void Character::move(int dir){
     setPixmap(char_ptr[1]);
     switch(dir){
-        case 1:
+        case 1: // Right
             if(x() > 720) return;
             direction = 1;
             moveBy(speed, 0);
             if(collidesWithItem(enemy)) moveBy(-speed, 0);
             break;
-        case 2:
+        case 2: // Left
             if(x() <= 0) return;
             setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
             direction = 2;
             moveBy(-speed, 0);
             if(collidesWithItem(enemy)) moveBy(speed, 0);
             break;
-        case 3:
+        case 3: // Up
             if(y() <= 0) return;
             moveBy(0, -speed);
             if(collidesWithItem(enemy)) moveBy(0, speed);
             break;
-        default:
+        default: // Down
             if(y() > 495) return;
             moveBy(0, speed);
             if(collidesWithItem(enemy)) moveBy(0, -speed);
