@@ -3,6 +3,7 @@
 #include <QPixmap>
 #include <QGraphicsScene>
 #include <QObject>
+#include <QRandomGenerator>
 #include "Character.h"
 #include "Projectile.h"
 
@@ -38,11 +39,10 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
 }
 
 void Character::moveRandomly(){
-    srand(time(0));
 
-    int random_direction = rand() % 5 + 1;
+    int random_direction = QRandomGenerator::global()->bounded(1, 4);
 
-    int random_time = rand() % 4 + 2;
+    int random_time = QRandomGenerator::global()->bounded(2, 3);
     QTimer* one_move_timer = new QTimer();
     one_move_timer->setSingleShot(true);
     one_move_timer->start(random_time*100);
@@ -122,6 +122,13 @@ void Character::shoot(){
     else if(direction==2)
         setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
     Projectile* projectile = new Projectile(scene, enemy, this, 1);
+    QTimer::singleShot(160, [this](){
+        setPixmap(char_ptr[0]);
+        if(direction==1)
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+        else if(direction==2)
+            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    });
 }
 
 void Character::keyPressEvent(QKeyEvent *event) {
@@ -141,19 +148,12 @@ void Character::keyPressEvent(QKeyEvent *event) {
 }
 
 void Character::keyReleaseEvent(QKeyEvent *event) {
-    if(event->key() == Qt::Key_Space){
-        QTimer* timer = new QTimer();
-        timer->start(160);
-        while(timer->remainingTime() > 0){}
-        setPixmap(char_ptr[0]);
-    }
-
+    if(event->key() == Qt::Key_Space) return;
     setPixmap(char_ptr[0]);
     if(direction==1)
         setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
     else if(direction==2)
         setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
-    
 }
 
 void Character::setEnemy(QGraphicsItem* en){

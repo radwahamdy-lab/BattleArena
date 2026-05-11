@@ -485,6 +485,8 @@ CMakeFiles/game.dir/gui/Character.cpp.o: /home/drrad/BattleArena/gui/Character.c
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/random.h \
+  /usr/include/c++/13/bits/random.tcc \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -570,6 +572,7 @@ CMakeFiles/game.dir/gui/Character.cpp.o: /home/drrad/BattleArena/gui/Character.c
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
@@ -704,11 +707,13 @@ CMakeFiles/game.dir/gui/Character.cpp.o: /home/drrad/BattleArena/gui/Character.c
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -769,6 +774,7 @@ CMakeFiles/game.dir/gui/Character.cpp.o: /home/drrad/BattleArena/gui/Character.c
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
@@ -3065,6 +3071,12 @@ CMakeFiles/game.dir/gui/main.cpp.o: /home/drrad/BattleArena/gui/main.cpp \
 
 /usr/include/c++/13/cwctype:
 
+/usr/include/c++/13/random:
+
+/usr/include/c++/13/bits/random.tcc:
+
+/usr/include/c++/13/bits/random.h:
+
 /usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
@@ -3138,6 +3150,8 @@ CMakeFiles/game.dir/gui/main.cpp.o: /home/drrad/BattleArena/gui/main.cpp \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h:
 
 /usr/include/c++/13/ostream:
 
@@ -3260,6 +3274,8 @@ CMakeFiles/game.dir/gui/main.cpp.o: /home/drrad/BattleArena/gui/main.cpp \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
 
@@ -3650,6 +3666,8 @@ game_autogen/DMHXEJ42XS/moc_Character.cpp:
 /usr/include/alloca.h:
 
 game_autogen/GBFAFXFCVO/qrc_resources.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
