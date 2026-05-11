@@ -401,6 +401,7 @@ CMakeFiles/game.dir/gui/main.cpp.o: /home/drrad/BattleArena/gui/main.cpp \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /home/drrad/BattleArena/gui/Obstacle.h \
  /home/drrad/BattleArena/gui/Scoreboard.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \

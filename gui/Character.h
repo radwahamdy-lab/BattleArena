@@ -3,6 +3,10 @@
 #include <QKeyEvent>
 #include <QPixmap>
 #include <QObject>
+#include "Obstacle.h"
+
+#include <vector>
+using namespace std;
 
 class Character : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
@@ -17,7 +21,9 @@ class Character : public QObject, public QGraphicsPixmapItem {
         void setEnemy(QGraphicsItem*);
         void move(int dir);
         void shoot();
+        void setObstacles(vector<Obstacle*> obst);
         void moveRandomly();
+        bool collidesWithObstacle();
     protected:
         void keyPressEvent(QKeyEvent *event);
         void keyReleaseEvent(QKeyEvent *event);
@@ -38,6 +44,7 @@ class Character : public QObject, public QGraphicsPixmapItem {
         QPixmap* char_ptr;
         QGraphicsScene* scene;
         QGraphicsItem* enemy;
+        vector<Obstacle*> obstacles;
         int speed = 5;
         int character;
         int direction;

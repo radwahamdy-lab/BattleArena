@@ -251,6 +251,30 @@ gui/GameScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/GameScreen.cpp.s
 .PHONY : gui/GameScreen.cpp.s
 
+gui/Obstacle.o: gui/Obstacle.cpp.o
+.PHONY : gui/Obstacle.o
+
+# target to build an object file
+gui/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.o
+.PHONY : gui/Obstacle.cpp.o
+
+gui/Obstacle.i: gui/Obstacle.cpp.i
+.PHONY : gui/Obstacle.i
+
+# target to preprocess a source file
+gui/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.i
+.PHONY : gui/Obstacle.cpp.i
+
+gui/Obstacle.s: gui/Obstacle.cpp.s
+.PHONY : gui/Obstacle.s
+
+# target to generate assembly for a file
+gui/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.s
+.PHONY : gui/Obstacle.cpp.s
+
 gui/Projectile.o: gui/Projectile.cpp.o
 .PHONY : gui/Projectile.o
 
@@ -370,6 +394,9 @@ help:
 	@echo "... gui/GameScreen.o"
 	@echo "... gui/GameScreen.i"
 	@echo "... gui/GameScreen.s"
+	@echo "... gui/Obstacle.o"
+	@echo "... gui/Obstacle.i"
+	@echo "... gui/Obstacle.s"
 	@echo "... gui/Projectile.o"
 	@echo "... gui/Projectile.i"
 	@echo "... gui/Projectile.s"

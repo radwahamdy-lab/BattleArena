@@ -362,4 +362,5 @@ CMakeFiles/game.dir/gui/Scoreboard.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /home/drrad/BattleArena/gui/Obstacle.h

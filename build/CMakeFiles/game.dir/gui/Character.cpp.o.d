@@ -362,6 +362,7 @@ CMakeFiles/game.dir/gui/Character.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc \
  /home/drrad/BattleArena/gui/Character.h \
+ /home/drrad/BattleArena/gui/Obstacle.h \
  /home/drrad/BattleArena/gui/Projectile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \

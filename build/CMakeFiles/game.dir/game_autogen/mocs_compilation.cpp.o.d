@@ -358,6 +358,8 @@ CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /home/drrad/BattleArena/build/game_autogen/DMHXEJ42XS/../../../gui/Obstacle.h \
+ /home/drrad/BattleArena/build/game_autogen/DMHXEJ42XS/moc_Obstacle.cpp \
  /home/drrad/BattleArena/build/game_autogen/DMHXEJ42XS/moc_Projectile.cpp \
  /home/drrad/BattleArena/build/game_autogen/DMHXEJ42XS/../../../gui/Projectile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \

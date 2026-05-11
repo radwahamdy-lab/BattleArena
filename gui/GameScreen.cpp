@@ -1,5 +1,9 @@
 #include "GameScreen.h"
 #include "Character.h"
+#include "Scoreboard.h"
+#include "Character.h"
+#include "Obstacle.h"
+
 #include <QStackedWidget>
 #include <QApplication>
 #include <QGraphicsScene>
@@ -11,9 +15,9 @@
 #include <QGraphicsTextItem>
 #include <QString>
 #include <QFont>
+
 #include <string>
-#include "Scoreboard.h"
-#include "Character.h"
+#include <vector>
 using namespace std;
 
 
@@ -65,6 +69,14 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     comp->setEnemy(player);
 
     scoreboard = new Scoreboard(scene, player, comp);
+
+    for(int i=0; i<obstacles_num; i++){
+        Obstacle* obs = new Obstacle(scene, player->pos(), comp->pos());
+        obstacles.push_back(obs);
+    }
+
+    player->setObstacles(obstacles);
+    comp->setObstacles(obstacles);
 
     view->setCacheMode(QGraphicsView::CacheBackground);
 

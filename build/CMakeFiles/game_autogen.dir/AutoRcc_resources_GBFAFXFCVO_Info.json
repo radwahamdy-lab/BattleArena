@@ -20,7 +20,9 @@
 		"/home/drrad/BattleArena/assets/characters/Mage/Magic.png",
 		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Idle.png",
 		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Attack.png",
-		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png"
+		"/home/drrad/BattleArena/assets/characters/Mage/Mage_Run.png",
+		"/home/drrad/BattleArena/assets/walls/Castle_vertical1.png",
+		"/home/drrad/BattleArena/assets/walls/vertical_wall.png"
 	],
 	"LOCK_FILE" : "/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Lock.lock",
 	"MULTI_CONFIG" : false,

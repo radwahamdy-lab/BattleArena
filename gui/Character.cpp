@@ -6,13 +6,15 @@
 #include <QRandomGenerator>
 #include "Character.h"
 #include "Projectile.h"
+#include "Obstacle.h"
 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <vector>
 using namespace std;
 
-Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGraphicsPixmapItem(), scene(sc), character(chr) {
+Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGraphicsPixmapItem(), scene(sc), character(chr){
     if(!isComp){
         setFlag(QGraphicsItem::ItemIsFocusable);
         setPos(0,0);
@@ -39,10 +41,9 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
 }
 
 void Character::moveRandomly(){
-
-    int random_direction = QRandomGenerator::global()->bounded(1, 4);
-
-    int random_time = QRandomGenerator::global()->bounded(2, 3);
+    srand(time(0));
+    int random_direction = rand() % 5 + 1;
+    int random_time = rand() & 4 + 2;
     QTimer* one_move_timer = new QTimer();
     one_move_timer->setSingleShot(true);
     one_move_timer->start(random_time*100);
@@ -94,25 +95,35 @@ void Character::move(int dir){
             if(x() > 720) return;
             direction = 1;
             moveBy(speed, 0);
-            if(collidesWithItem(enemy)) moveBy(-speed, 0);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(-speed, 0);
             break;
         case 2: // Left
             if(x() <= 0) return;
             setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
             direction = 2;
             moveBy(-speed, 0);
-            if(collidesWithItem(enemy)) moveBy(speed, 0);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(speed, 0);
             break;
         case 3: // Up
             if(y() <= 0) return;
             moveBy(0, -speed);
-            if(collidesWithItem(enemy)) moveBy(0, speed);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(0, speed);
             break;
         default: // Down
             if(y() > 495) return;
             moveBy(0, speed);
-            if(collidesWithItem(enemy)) moveBy(0, -speed);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(0, -speed);
     }
+}
+
+bool Character::collidesWithObstacle(){
+    bool collides = false;
+    for(int i=0; i<obstacles.size() && !collides; i++){
+        if(collidesWithItem(obstacles[i])) {
+            collides=true;
+        }
+    }
+    return collides;
 }
 
 void Character::shoot(){
@@ -158,4 +169,8 @@ void Character::keyReleaseEvent(QKeyEvent *event) {
 
 void Character::setEnemy(QGraphicsItem* en){
     enemy = en;
+}
+
+void Character::setObstacles(vector<Obstacle*> obst){
+    obstacles = obst;
 }

@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/gui/Character.cpp.o.d"
   "CMakeFiles/game.dir/gui/GameScreen.cpp.o"
   "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
+  "CMakeFiles/game.dir/gui/Obstacle.cpp.o"
+  "CMakeFiles/game.dir/gui/Obstacle.cpp.o.d"
   "CMakeFiles/game.dir/gui/Projectile.cpp.o"
   "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"
   "CMakeFiles/game.dir/gui/Scoreboard.cpp.o"

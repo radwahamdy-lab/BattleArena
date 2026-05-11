@@ -1,6 +1,7 @@
 /home/drrad/BattleArena/build/game_autogen/DMHXEJ42XS/moc_Projectile.cpp: /home/drrad/BattleArena/gui/Projectile.h \
   /home/drrad/BattleArena/build/game_autogen/moc_predefs.h \
   /home/drrad/BattleArena/gui/Character.h \
+  /home/drrad/BattleArena/gui/Obstacle.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
