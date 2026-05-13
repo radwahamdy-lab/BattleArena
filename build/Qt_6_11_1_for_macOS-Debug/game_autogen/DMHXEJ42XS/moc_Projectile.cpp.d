@@ -893,6 +893,7 @@
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Users/hanyahashem/BattleArena/gui/Character.h \
+  /Users/hanyahashem/BattleArena/gui/Obstacle.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QRect \

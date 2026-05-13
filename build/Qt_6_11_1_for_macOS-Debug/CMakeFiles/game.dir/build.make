@@ -74,13 +74,18 @@ game_autogen/GBFAFXFCVO/qrc_resources.cpp: CMakeFiles/game_autogen.dir/AutoRcc_r
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/grass_block.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Archer/Archer_Run.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Archer/Arrow.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Archer/Archer_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Archer/Archer_Idle.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Attack2.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Idle.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Run.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Magic.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Mage_Idle.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Mage_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Mage_Run.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/walls/vertical_wall.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/walls/Castle_vertical31.png
+game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/walls/Castle_vertical11.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/Qt1/6.11.1/macos/libexec/rcc
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/Qt1/6.11.1/macos/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for assets/resources.qrc"
@@ -170,24 +175,38 @@ CMakeFiles/game.dir/gui/Projectile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Projectile.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanyahashem/BattleArena/gui/Projectile.cpp -o CMakeFiles/game.dir/gui/Projectile.cpp.s
 
-CMakeFiles/game.dir/gui/game.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/gui/game.cpp.o: /Users/hanyahashem/BattleArena/gui/game.cpp
-CMakeFiles/game.dir/gui/game.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/gui/game.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/game.cpp.o -MF CMakeFiles/game.dir/gui/game.cpp.o.d -o CMakeFiles/game.dir/gui/game.cpp.o -c /Users/hanyahashem/BattleArena/gui/game.cpp
+CMakeFiles/game.dir/gui/Scoreboard.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/Scoreboard.cpp.o: /Users/hanyahashem/BattleArena/gui/Scoreboard.cpp
+CMakeFiles/game.dir/gui/Scoreboard.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/gui/Scoreboard.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/Scoreboard.cpp.o -MF CMakeFiles/game.dir/gui/Scoreboard.cpp.o.d -o CMakeFiles/game.dir/gui/Scoreboard.cpp.o -c /Users/hanyahashem/BattleArena/gui/Scoreboard.cpp
 
-CMakeFiles/game.dir/gui/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/game.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanyahashem/BattleArena/gui/game.cpp > CMakeFiles/game.dir/gui/game.cpp.i
+CMakeFiles/game.dir/gui/Scoreboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/Scoreboard.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanyahashem/BattleArena/gui/Scoreboard.cpp > CMakeFiles/game.dir/gui/Scoreboard.cpp.i
 
-CMakeFiles/game.dir/gui/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/game.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanyahashem/BattleArena/gui/game.cpp -o CMakeFiles/game.dir/gui/game.cpp.s
+CMakeFiles/game.dir/gui/Scoreboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Scoreboard.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanyahashem/BattleArena/gui/Scoreboard.cpp -o CMakeFiles/game.dir/gui/Scoreboard.cpp.s
+
+CMakeFiles/game.dir/gui/Obstacle.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/Obstacle.cpp.o: /Users/hanyahashem/BattleArena/gui/Obstacle.cpp
+CMakeFiles/game.dir/gui/Obstacle.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/gui/Obstacle.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/Obstacle.cpp.o -MF CMakeFiles/game.dir/gui/Obstacle.cpp.o.d -o CMakeFiles/game.dir/gui/Obstacle.cpp.o -c /Users/hanyahashem/BattleArena/gui/Obstacle.cpp
+
+CMakeFiles/game.dir/gui/Obstacle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/Obstacle.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanyahashem/BattleArena/gui/Obstacle.cpp > CMakeFiles/game.dir/gui/Obstacle.cpp.i
+
+CMakeFiles/game.dir/gui/Obstacle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Obstacle.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanyahashem/BattleArena/gui/Obstacle.cpp -o CMakeFiles/game.dir/gui/Obstacle.cpp.s
 
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: game_autogen/GBFAFXFCVO/qrc_resources.cpp
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -MF CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d -o CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -c /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/GBFAFXFCVO/qrc_resources.cpp
 
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i: cmake_force
@@ -206,7 +225,8 @@ game_OBJECTS = \
 "CMakeFiles/game.dir/gui/GameScreen.cpp.o" \
 "CMakeFiles/game.dir/gui/Character.cpp.o" \
 "CMakeFiles/game.dir/gui/Projectile.cpp.o" \
-"CMakeFiles/game.dir/gui/game.cpp.o" \
+"CMakeFiles/game.dir/gui/Scoreboard.cpp.o" \
+"CMakeFiles/game.dir/gui/Obstacle.cpp.o" \
 "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 
 # External object files for target game
@@ -218,14 +238,15 @@ game: CMakeFiles/game.dir/gui/StartScreen.cpp.o
 game: CMakeFiles/game.dir/gui/GameScreen.cpp.o
 game: CMakeFiles/game.dir/gui/Character.cpp.o
 game: CMakeFiles/game.dir/gui/Projectile.cpp.o
-game: CMakeFiles/game.dir/gui/game.cpp.o
+game: CMakeFiles/game.dir/gui/Scoreboard.cpp.o
+game: CMakeFiles/game.dir/gui/Obstacle.cpp.o
 game: CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 game: /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui
 game: /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/QtCore
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

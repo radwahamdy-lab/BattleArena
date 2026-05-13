@@ -1,3 +1,4 @@
+
 #pragma once
 #include <QGraphicsPixmapItem>
 #include <QTimer>
@@ -10,8 +11,7 @@ class Projectile : public QObject, public QGraphicsPixmapItem {
 
 public:
     Projectile(QGraphicsScene* sc, QGraphicsItem* tar, Character* src, int inc);
-    void attack();
-    void close_attack();
+    
 
 private slots:
     void step();  // Called by timer each tick
@@ -19,6 +19,8 @@ private slots:
 private:
     bool isCollide();
     bool isOut();
+    void close_attack();
+    bool collideObstacle();
 
     QPixmap arrow = QPixmap(":characters/Archer/Arrow.png");
     QPixmap magic = QPixmap(":characters/Mage/Magic.png");
@@ -31,4 +33,6 @@ private:
     int character;
     int direction;
     int scoreInc;
+
+    bool collided = false;
 };

@@ -1,7 +1,7 @@
 CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: \
   /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/mocs_compilation.cpp \
-  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/moc_Projectile.cpp \
-  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Projectile.h \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/moc_Character.cpp \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Character.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsPixmapItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1121,16 +1121,13 @@ CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qrgba64.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qimage.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpixelformat.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QKeyEvent \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qevent.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcoreevent.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qbasictimer.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qeventloop.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
-  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Character.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QKeyEvent \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qevent.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcoreevent.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qiodevice.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qurl.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qeventpoint.h \
@@ -1155,6 +1152,23 @@ CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qkeysequence.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QPixmap \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Obstacle.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtmochelpers.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtmocconstants.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q20algorithm.h
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/moc_Obstacle.cpp \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/moc_Projectile.cpp \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Projectile.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/moc_Scoreboard.cpp \
+  /Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/DMHXEJ42XS/../../../../gui/Scoreboard.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qbrush.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qfont.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qendian.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString

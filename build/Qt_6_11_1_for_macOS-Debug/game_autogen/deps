@@ -905,18 +905,21 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/BattleArena/gui/CharacterScreen.h \
 	/Users/hanyahashem/BattleArena/gui/GameScreen.cpp \
 	/Users/hanyahashem/BattleArena/gui/GameScreen.h \
+	/Users/hanyahashem/BattleArena/gui/Obstacle.cpp \
+	/Users/hanyahashem/BattleArena/gui/Obstacle.h \
 	/Users/hanyahashem/BattleArena/gui/Projectile.cpp \
 	/Users/hanyahashem/BattleArena/gui/Projectile.h \
+	/Users/hanyahashem/BattleArena/gui/Scoreboard.cpp \
+	/Users/hanyahashem/BattleArena/gui/Scoreboard.h \
 	/Users/hanyahashem/BattleArena/gui/StartScreen.cpp \
 	/Users/hanyahashem/BattleArena/gui/StartScreen.h \
-	/Users/hanyahashem/BattleArena/gui/game.cpp \
-	/Users/hanyahashem/BattleArena/gui/game.h \
 	/Users/hanyahashem/BattleArena/gui/main.cpp \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QList \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QString \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q20bit.h \
@@ -963,6 +966,7 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qendian.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qeventloop.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
@@ -1057,12 +1061,15 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QFont \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QKeyEvent \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QPixmap \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qevent.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qfont.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qguiapplication.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qguiapplication_platform.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
@@ -1071,6 +1078,7 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpainterpath.h \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
@@ -1088,7 +1096,10 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
+	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
@@ -1306,117 +1317,40 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
 	/Users/hanyahashem/Qt1/6.11.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCCompilerABI.c \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCInformation.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXInformation.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeGenericSystem.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystem.cmake.in \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeUnixFindMake.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckIncludeFile.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckLibraryExists.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GNU.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindOpenGL.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageMessage.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindThreads.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/MacroAddFileDependencies.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake \
-	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Determine-CXX.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake \
 	/Users/hanyahashem/Qt1/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake \

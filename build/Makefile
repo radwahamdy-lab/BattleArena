@@ -251,6 +251,30 @@ gui/GameScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/GameScreen.cpp.s
 .PHONY : gui/GameScreen.cpp.s
 
+gui/Obstacle.o: gui/Obstacle.cpp.o
+.PHONY : gui/Obstacle.o
+
+# target to build an object file
+gui/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.o
+.PHONY : gui/Obstacle.cpp.o
+
+gui/Obstacle.i: gui/Obstacle.cpp.i
+.PHONY : gui/Obstacle.i
+
+# target to preprocess a source file
+gui/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.i
+.PHONY : gui/Obstacle.cpp.i
+
+gui/Obstacle.s: gui/Obstacle.cpp.s
+.PHONY : gui/Obstacle.s
+
+# target to generate assembly for a file
+gui/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Obstacle.cpp.s
+.PHONY : gui/Obstacle.cpp.s
+
 gui/Projectile.o: gui/Projectile.cpp.o
 .PHONY : gui/Projectile.o
 
@@ -274,6 +298,30 @@ gui/Projectile.s: gui/Projectile.cpp.s
 gui/Projectile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Projectile.cpp.s
 .PHONY : gui/Projectile.cpp.s
+
+gui/Scoreboard.o: gui/Scoreboard.cpp.o
+.PHONY : gui/Scoreboard.o
+
+# target to build an object file
+gui/Scoreboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.o
+.PHONY : gui/Scoreboard.cpp.o
+
+gui/Scoreboard.i: gui/Scoreboard.cpp.i
+.PHONY : gui/Scoreboard.i
+
+# target to preprocess a source file
+gui/Scoreboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.i
+.PHONY : gui/Scoreboard.cpp.i
+
+gui/Scoreboard.s: gui/Scoreboard.cpp.s
+.PHONY : gui/Scoreboard.s
+
+# target to generate assembly for a file
+gui/Scoreboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Scoreboard.cpp.s
+.PHONY : gui/Scoreboard.cpp.s
 
 gui/StartScreen.o: gui/StartScreen.cpp.o
 .PHONY : gui/StartScreen.o
@@ -346,9 +394,15 @@ help:
 	@echo "... gui/GameScreen.o"
 	@echo "... gui/GameScreen.i"
 	@echo "... gui/GameScreen.s"
+	@echo "... gui/Obstacle.o"
+	@echo "... gui/Obstacle.i"
+	@echo "... gui/Obstacle.s"
 	@echo "... gui/Projectile.o"
 	@echo "... gui/Projectile.i"
 	@echo "... gui/Projectile.s"
+	@echo "... gui/Scoreboard.o"
+	@echo "... gui/Scoreboard.i"
+	@echo "... gui/Scoreboard.s"
 	@echo "... gui/StartScreen.o"
 	@echo "... gui/StartScreen.i"
 	@echo "... gui/StartScreen.s"

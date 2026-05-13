@@ -3,12 +3,17 @@
         <file>grass_block.png</file>
         <file>characters/Archer/Archer_Idle.png</file>
         <file>characters/Archer/Archer_Run.png</file>
+        <file>characters/Archer/Archer_Attack.png</file>
         <file>characters/Mage/Mage_Idle.png</file>
         <file>characters/Mage/Mage_Run.png</file>
+        <file>characters/Mage/Mage_Attack.png</file>
         <file>characters/Mage/Magic.png</file>
         <file>characters/Warrior/Warrior_Run.png</file>
         <file>characters/Warrior/Warrior_Idle.png</file>
         <file>characters/Warrior/Warrior_Attack2.png</file>
         <file>characters/Archer/Arrow.png</file>
+        <file>walls/Castle_vertical11.png</file>
+        <file>walls/Castle_vertical31.png</file>
+        <file>walls/vertical_wall.png</file>
     </qresource>
 </RCC>

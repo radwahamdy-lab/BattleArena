@@ -12,9 +12,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/mocs_compilation.cpp" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/Character.cpp" "CMakeFiles/game.dir/gui/Character.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Character.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/GameScreen.cpp" "CMakeFiles/game.dir/gui/GameScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
+  "/Users/hanyahashem/BattleArena/gui/Obstacle.cpp" "CMakeFiles/game.dir/gui/Obstacle.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Obstacle.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/Projectile.cpp" "CMakeFiles/game.dir/gui/Projectile.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"
+  "/Users/hanyahashem/BattleArena/gui/Scoreboard.cpp" "CMakeFiles/game.dir/gui/Scoreboard.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Scoreboard.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/StartScreen.cpp" "CMakeFiles/game.dir/gui/StartScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/StartScreen.cpp.o.d"
-  "/Users/hanyahashem/BattleArena/gui/game.cpp" "CMakeFiles/game.dir/gui/game.cpp.o" "gcc" "CMakeFiles/game.dir/gui/game.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/main.cpp" "CMakeFiles/game.dir/gui/main.cpp.o" "gcc" "CMakeFiles/game.dir/gui/main.cpp.o.d"
   )
 

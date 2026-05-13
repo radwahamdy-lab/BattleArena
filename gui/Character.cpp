@@ -2,31 +2,72 @@
 #include <QKeyEvent>
 #include <QPixmap>
 #include <QGraphicsScene>
+#include <QObject>
+#include <QRandomGenerator>
 #include "Character.h"
 #include "Projectile.h"
-#include <QDebug>
+#include "Obstacle.h"
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <vector>
 using namespace std;
 
-Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QGraphicsPixmapItem(), scene(sc), character(chr) {
+Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGraphicsPixmapItem(), scene(sc), character(chr){
     if(!isComp){
         setFlag(QGraphicsItem::ItemIsFocusable);
         setPos(0,0);
         direction = 1;
     } else {
         setPos(600,0);
-        direction = 3;
+        direction = 2;
+        QTimer* movement_timer = new QTimer();
+        QTimer* shooting_timer = new QTimer();
+        movement_timer->start(1000);
+        shooting_timer->start(1500);
+        QObject::connect(movement_timer, &QTimer::timeout, this, &Character::moveRandomly);
+        QObject::connect(shooting_timer, &QTimer::timeout, this, [this, movement_timer](){
+            if(movement_timer->isActive()){
+                shoot();
+            }   
+        });
     }
-    if(character == ARCHER) char_ptr = archer;
-    else if(character == WARRIOR) char_ptr = warrior;
-    else if(character == MAGE) char_ptr = mage;
+    if(character == 1) char_ptr = warrior;
+    else if(character == 2) char_ptr = archer;
+    else if(character == 3) char_ptr = mage;
     setPixmap(char_ptr[0]);
     setZValue(1);
 }
 
+void Character::moveRandomly(){
+    srand(time(0));
+    int random_direction = rand() % 5 + 1;
+    int random_time = rand() & 4 + 2;
+    QTimer* one_move_timer = new QTimer();
+    one_move_timer->setSingleShot(true);
+    one_move_timer->start(random_time*100);
+
+    QTimer* small_timer = new QTimer();
+    QObject::connect(small_timer, &QTimer::timeout, this, [one_move_timer, random_direction, this](){
+        if(one_move_timer->isActive())
+            move(random_direction);
+    });
+    small_timer->start(30);
+
+    QObject::connect(one_move_timer, &QTimer::timeout, this, [this](){
+        setPixmap(char_ptr[0]);
+        if(direction==1)
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+        else if(direction==2)
+            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    });
+
+}
+
 void Character::setScore(int s){
     score = s;
+    emit scoreChanged();
 }
 
 int Character::getScore(){
@@ -42,66 +83,94 @@ int Character::getDirection(){
 }
 
 QPixmap* Character::getPixmaps(){
-    if(character==ARCHER) return archer;
-    if(character==WARRIOR) return warrior;
+    if(character==1) return archer;
+    if(character==2) return warrior;
     else return mage;
 }
 
-void Character::keyPressEvent(QKeyEvent *event) {
-    qDebug() << "KEY PRESSED";
-    if (event->key() == Qt::Key_Space){
-        if(character != WARRIOR)
-            Projectile* projectile = new Projectile(scene, enemy, this, 1);
-        else{
-            // Close Attack For Warrior
-            setPixmap(warrior[2]);
-
-        }
-    } else {
-        setPixmap(char_ptr[1]);
-        if (event->key() == Qt::Key_Left && x() >= 0) {
-            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
-            direction = 3;
-            moveBy(-speed, 0);
-        } else if (event->key() == Qt::Key_Right && x() <= 720) {
+void Character::move(int dir){
+    setPixmap(char_ptr[1]);
+    switch(dir){
+        case 1: // Right
+            if(x() > 720) return;
             direction = 1;
             moveBy(speed, 0);
-        } else if (event->key() == Qt::Key_Up && y() >= 0) {
-            setTransformOriginPoint(pixmap().rect().center());
-            setRotation(-90);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(-speed, 0);
+            break;
+        case 2: // Left
+            if(x() <= 0) return;
+            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
             direction = 2;
+            moveBy(-speed, 0);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(speed, 0);
+            break;
+        case 3: // Up
+            if(y() <= 0) return;
             moveBy(0, -speed);
-        } else if (event->key() == Qt::Key_Down && y() <= 495) {
-            setTransformOriginPoint(pixmap().rect().center());
-            setRotation(90);
-            direction = 4;
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(0, speed);
+            break;
+        default: // Down
+            if(y() > 495) return;
             moveBy(0, speed);
+            if(collidesWithItem(enemy) || collidesWithObstacle()) moveBy(0, -speed);
+    }
+}
+
+bool Character::collidesWithObstacle(){
+    bool collides = false;
+    for(int i=0; i<obstacles.size() && !collides; i++){
+        if(collidesWithItem(obstacles[i])) {
+            collides=true;
+        }
+    }
+    return collides;
+}
+
+void Character::shoot(){
+    setPixmap(char_ptr[2]);
+    if(direction==1)
+        setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+    else if(direction==2)
+        setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    Projectile* projectile = new Projectile(scene, enemy, this, 1);
+    QTimer::singleShot(160, [this](){
+        setPixmap(char_ptr[0]);
+        if(direction==1)
+            setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
+        else if(direction==2)
+            setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    });
+}
+
+void Character::keyPressEvent(QKeyEvent *event) {
+    if (event->key() == Qt::Key_Space){
+        shoot();
+    } else {
+        if (event->key() == Qt::Key_Left) {
+            move(2);
+        } else if (event->key() == Qt::Key_Right) {
+            move(1);
+        } else if (event->key() == Qt::Key_Up){
+            move(3);
+        } else if (event->key() == Qt::Key_Down){
+            move(4);
         }
     }
 }
 
 void Character::keyReleaseEvent(QKeyEvent *event) {
+    if(event->key() == Qt::Key_Space) return;
     setPixmap(char_ptr[0]);
-    if(direction==1) {
+    if(direction==1)
         setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
-        setTransformOriginPoint(pixmap().rect().center());
-        setRotation(0);
-    } else if(direction==2){
-        setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
-        setTransformOriginPoint(pixmap().rect().center());
-        setRotation(-90);
-    } else if(direction==3){
+    else if(direction==2)
         setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
-        setTransformOriginPoint(pixmap().rect().center());
-        setRotation(0);
-    } else {
-        setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
-        setTransformOriginPoint(pixmap().rect().center());
-        setRotation(90);
-    }
-    
 }
 
 void Character::setEnemy(QGraphicsItem* en){
     enemy = en;
+}
+
+void Character::setObstacles(vector<Obstacle*> obst){
+    obstacles = obst;
 }

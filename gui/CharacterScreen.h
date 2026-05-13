@@ -7,8 +7,6 @@
 #include <QString>
 #include <cstdlib>
 #include <ctime>
-#include "game.h"
-#include "GameScreen.h"
 
 class CharacterScreen {
 	private:
@@ -35,63 +33,53 @@ class CharacterScreen {
 
 	public:
 		CharacterScreen(QStackedWidget* stackedwid){
-			srand(time(0));  
-
+			srand(time(0));
+			characterPage->setStyleSheet("background-color: rgb(58, 57, 57);");
 			QVBoxLayout *startLayout = new QVBoxLayout(characterPage);
+
 			QLabel *title = new QLabel("Choose Your Character");
-			startLayout->addWidget(title);
+			title->setStyleSheet("font: 700 36pt 'JetBrainsMono Nerd Font Propo'; color: white");
 
 		        QPushButton *warriorBtn = new QPushButton("Warrior");
-       		        QPushButton *archerBtn = new QPushButton("Archer");
-		        QPushButton *mageBtn = new QPushButton("Mage");
+			warriorBtn->setFixedWidth(611);
+			warriorBtn->setFixedHeight(51);
+                        warriorBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
+
+			QPushButton *archerBtn = new QPushButton("Archer");
+			archerBtn->setFixedWidth(611);
+			archerBtn->setFixedHeight(51);
+                        archerBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
+
+			QPushButton *mageBtn = new QPushButton("Mage");
+			mageBtn->setFixedWidth(611);
+			mageBtn->setFixedHeight(51);
+                        mageBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
         		QPushButton *returnBtn = new QPushButton("Return");
-			returnBtn->setGeometry(90, 190, 611, 51);
-			returnBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white; background-color: rgb(47, 47, 47);");
+			returnBtn->setFixedWidth(611);
+			returnBtn->setFixedHeight(51);
+			returnBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
-			startLayout->addWidget(warriorBtn);
-		        startLayout->addWidget(archerBtn);
-        		startLayout->addWidget(mageBtn);
-			startLayout->addWidget(returnBtn);
+			startLayout->addWidget(title, 2, Qt::AlignCenter);
+		        startLayout->addWidget(warriorBtn, 2, Qt::AlignCenter);
+        		startLayout->addWidget(archerBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(mageBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(returnBtn, 2, Qt::AlignCenter);
 
-                QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
+        		QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
+			    selectCharacter("Warrior");
+			    stackedwid->setCurrentIndex(2);
+			});
 
-                    selectCharacter("Warrior");
+			QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
+			    selectCharacter("Archer");
+			    stackedwid->setCurrentIndex(2);
+			});
 
-                    Game* game = new Game(userCharacter, computerCharacter);
-
-                    game->startGame();
-
-                    stackedwid->addWidget(game->getGameScreen()->getPage());
-
-                    stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
-                }); // // Connects the character selection button to the game flow by saving the selected character, creating the Game manager, starting the timer/update system, and displaying the GameScreen.
-
-            QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
-
-                selectCharacter("Archer");
-
-                Game* game = new Game(userCharacter, computerCharacter);
-
-                game->startGame();
-
-                stackedwid->addWidget(game->getGameScreen()->getPage());
-
-                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
-            });
-
-                QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {
-
-                    selectCharacter("Mage");
-
-                    Game* game = new Game(userCharacter, computerCharacter);
-
-                    game->startGame();
-
-                    stackedwid->addWidget(game->getGameScreen()->getPage());
-
-                    stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
-                });
+			QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {
+			    selectCharacter("Mage");
+			    stackedwid->setCurrentIndex(2);
+			});
 
 			QObject::connect(returnBtn, &QPushButton::clicked, [stackedwid](){
 				stackedwid->setCurrentIndex(0);

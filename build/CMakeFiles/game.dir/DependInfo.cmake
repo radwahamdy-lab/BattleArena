@@ -12,7 +12,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
   "/home/drrad/BattleArena/gui/Character.cpp" "CMakeFiles/game.dir/gui/Character.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Character.cpp.o.d"
   "/home/drrad/BattleArena/gui/GameScreen.cpp" "CMakeFiles/game.dir/gui/GameScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
+  "/home/drrad/BattleArena/gui/Obstacle.cpp" "CMakeFiles/game.dir/gui/Obstacle.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Obstacle.cpp.o.d"
   "/home/drrad/BattleArena/gui/Projectile.cpp" "CMakeFiles/game.dir/gui/Projectile.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"
+  "/home/drrad/BattleArena/gui/Scoreboard.cpp" "CMakeFiles/game.dir/gui/Scoreboard.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Scoreboard.cpp.o.d"
   "/home/drrad/BattleArena/gui/StartScreen.cpp" "CMakeFiles/game.dir/gui/StartScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/StartScreen.cpp.o.d"
   "/home/drrad/BattleArena/gui/main.cpp" "CMakeFiles/game.dir/gui/main.cpp.o" "gcc" "CMakeFiles/game.dir/gui/main.cpp.o.d"
   )

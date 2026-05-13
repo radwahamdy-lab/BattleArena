@@ -1150,10 +1150,12 @@ CMakeFiles/game.dir/gui/GameScreen.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qeventloop.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
-  /Users/hanyahashem/BattleArena/gui/Character.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsPixmapItem \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpainterpath.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
+  /Users/hanyahashem/BattleArena/gui/Character.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsPixmapItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QKeyEvent \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qevent.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcoreevent.h \
@@ -1179,18 +1181,18 @@ CMakeFiles/game.dir/gui/GameScreen.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QPixmap \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QApplication \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qapplication.h \
+  /Users/hanyahashem/BattleArena/gui/Obstacle.h \
+  /Users/hanyahashem/BattleArena/gui/Scoreboard.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QApplication \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qapplication.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpainter.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtextoption.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qscrollarea.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QBrush \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QBrush

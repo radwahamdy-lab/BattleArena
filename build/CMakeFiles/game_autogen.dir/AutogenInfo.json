@@ -194,9 +194,21 @@
 			null
 		],
 		[
+			"/home/drrad/BattleArena/gui/Obstacle.h",
+			"Mu",
+			"DMHXEJ42XS/moc_Obstacle.cpp",
+			null
+		],
+		[
 			"/home/drrad/BattleArena/gui/Projectile.h",
 			"Mu",
 			"DMHXEJ42XS/moc_Projectile.cpp",
+			null
+		],
+		[
+			"/home/drrad/BattleArena/gui/Scoreboard.h",
+			"Mu",
+			"DMHXEJ42XS/moc_Scoreboard.cpp",
 			null
 		],
 		[
@@ -259,7 +271,9 @@
 	[
 		[ "/home/drrad/BattleArena/gui/Character.cpp", "Mu", null ],
 		[ "/home/drrad/BattleArena/gui/GameScreen.cpp", "Mu", null ],
+		[ "/home/drrad/BattleArena/gui/Obstacle.cpp", "Mu", null ],
 		[ "/home/drrad/BattleArena/gui/Projectile.cpp", "Mu", null ],
+		[ "/home/drrad/BattleArena/gui/Scoreboard.cpp", "Mu", null ],
 		[ "/home/drrad/BattleArena/gui/StartScreen.cpp", "Mu", null ],
 		[ "/home/drrad/BattleArena/gui/main.cpp", "Mu", null ]
 	],
