@@ -1195,4 +1195,5 @@ CMakeFiles/game.dir/gui/GameScreen.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtextoption.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qscrollarea.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QBrush
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QBrush \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug

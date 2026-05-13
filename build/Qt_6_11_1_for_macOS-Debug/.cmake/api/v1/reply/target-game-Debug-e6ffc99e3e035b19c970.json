@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 22,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -123,7 +123,7 @@
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 24,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -229,7 +229,8 @@
 				10,
 				13,
 				15,
-				17
+				16,
+				19
 			]
 		}
 	],
@@ -338,7 +339,8 @@
 				10,
 				13,
 				15,
-				17
+				16,
+				19
 			]
 		},
 		{
@@ -351,7 +353,8 @@
 				7,
 				9,
 				12,
-				14
+				14,
+				17
 			]
 		},
 		{
@@ -365,15 +368,15 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				16
+				18
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				18,
-				19
+				20,
+				21
 			]
 		}
 	],
@@ -467,6 +470,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "gui/Obstacle.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "gui/Game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gui/Game.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,

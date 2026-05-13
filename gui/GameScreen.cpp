@@ -19,6 +19,7 @@
 #include <functional>
 #include <string>
 #include <vector>
+#include <QDebug>
 
 using namespace std;
 
@@ -33,12 +34,25 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
 
     // Quit Button
     QPushButton* quitButton = new QPushButton("Quit");
+    quitButton->setFixedHeight(50);
+
+    QObject::connect(quitButton, &QPushButton::clicked, []() {
+
+        qDebug() << "BUTTON WORKS";
+    });
 
     quitButton->setStyleSheet(
         "font: 16pt 'JetBrainsMono Nerd Font Propo';"
         "color: white;"
         "background-color: rgb(120, 30, 30);"
         );
+
+    // Quit Button Logic
+    QObject::connect(quitButton, &QPushButton::clicked, [this]() {
+
+        if(quitCallback)
+            quitCallback();
+    });
 
     // Drawing Background
     QPixmap grassTile(":/grass_block.png");
@@ -119,13 +133,6 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     player->setObstacles(obstacles);
 
     comp->setObstacles(obstacles);
-
-    // Quit Button Logic
-    QObject::connect(quitButton, &QPushButton::clicked, [this]() {
-
-        if(quitCallback)
-            quitCallback();
-    });
 
     view->setCacheMode(QGraphicsView::CacheBackground);
 

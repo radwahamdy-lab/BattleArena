@@ -404,6 +404,12 @@
 			null
 		],
 		[
+			"/Users/hanyahashem/BattleArena/gui/Game.h",
+			"Mu",
+			"DMHXEJ42XS/moc_Game.cpp",
+			null
+		],
+		[
 			"/Users/hanyahashem/BattleArena/gui/GameScreen.h",
 			"Mu",
 			"DMHXEJ42XS/moc_GameScreen.cpp",
@@ -486,6 +492,7 @@
 	"SOURCES" : 
 	[
 		[ "/Users/hanyahashem/BattleArena/gui/Character.cpp", "Mu", null ],
+		[ "/Users/hanyahashem/BattleArena/gui/Game.cpp", "Mu", null ],
 		[ "/Users/hanyahashem/BattleArena/gui/GameScreen.cpp", "Mu", null ],
 		[ "/Users/hanyahashem/BattleArena/gui/Obstacle.cpp", "Mu", null ],
 		[ "/Users/hanyahashem/BattleArena/gui/Projectile.cpp", "Mu", null ],

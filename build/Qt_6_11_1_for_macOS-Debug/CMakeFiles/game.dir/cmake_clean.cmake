@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/game.dir/gui/Character.cpp.o"
   "CMakeFiles/game.dir/gui/Character.cpp.o.d"
+  "CMakeFiles/game.dir/gui/Game.cpp.o"
+  "CMakeFiles/game.dir/gui/Game.cpp.o.d"
   "CMakeFiles/game.dir/gui/GameScreen.cpp.o"
   "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
   "CMakeFiles/game.dir/gui/Obstacle.cpp.o"

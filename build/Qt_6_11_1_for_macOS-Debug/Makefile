@@ -227,6 +227,30 @@ gui/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Character.cpp.s
 .PHONY : gui/Character.cpp.s
 
+gui/Game.o: gui/Game.cpp.o
+.PHONY : gui/Game.o
+
+# target to build an object file
+gui/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Game.cpp.o
+.PHONY : gui/Game.cpp.o
+
+gui/Game.i: gui/Game.cpp.i
+.PHONY : gui/Game.i
+
+# target to preprocess a source file
+gui/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Game.cpp.i
+.PHONY : gui/Game.cpp.i
+
+gui/Game.s: gui/Game.cpp.s
+.PHONY : gui/Game.s
+
+# target to generate assembly for a file
+gui/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/gui/Game.cpp.s
+.PHONY : gui/Game.cpp.s
+
 gui/GameScreen.o: gui/GameScreen.cpp.o
 .PHONY : gui/GameScreen.o
 
@@ -391,6 +415,9 @@ help:
 	@echo "... gui/Character.o"
 	@echo "... gui/Character.i"
 	@echo "... gui/Character.s"
+	@echo "... gui/Game.o"
+	@echo "... gui/Game.i"
+	@echo "... gui/Game.s"
 	@echo "... gui/GameScreen.o"
 	@echo "... gui/GameScreen.i"
 	@echo "... gui/GameScreen.s"

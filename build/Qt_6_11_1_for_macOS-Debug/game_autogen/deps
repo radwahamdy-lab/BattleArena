@@ -903,6 +903,8 @@ game_autogen/timestamp: \
 	/Users/hanyahashem/BattleArena/gui/Character.cpp \
 	/Users/hanyahashem/BattleArena/gui/Character.h \
 	/Users/hanyahashem/BattleArena/gui/CharacterScreen.h \
+	/Users/hanyahashem/BattleArena/gui/Game.cpp \
+	/Users/hanyahashem/BattleArena/gui/Game.h \
 	/Users/hanyahashem/BattleArena/gui/GameScreen.cpp \
 	/Users/hanyahashem/BattleArena/gui/GameScreen.h \
 	/Users/hanyahashem/BattleArena/gui/Obstacle.cpp \

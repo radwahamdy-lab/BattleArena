@@ -1,10 +1,11 @@
-#include "game.h"
 #include "GameScreen.h"
 #include <QMessageBox>
 #include <QFile>
 #include <QTextStream>
 #include <QApplication>
 #include <QDir>
+#include <QDebug>
+#include "game.h"
 
 Game::Game(QString player, QString computer) {
     playerCharacter = player;
@@ -51,6 +52,8 @@ void Game::startGame() {
 
         quitGame();
     });
+
+    qDebug() << "SETTING QUIT CALLBACK";
 
     // when the timer emits a timeout signal,
     // call updateGame() every second
@@ -131,6 +134,7 @@ void Game::quitGame(){
 
         QApplication::quit();
     }
+    qDebug() << "QUIT GAME FUNCTION RUNNING";
 }
 
 void Game::saveGame(){

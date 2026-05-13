@@ -12,6 +12,12 @@ enum GameState {
     GAMEOVER
 };
 
+enum CharacterType {
+    ARCHER = 1,
+    WARRIOR = 2,
+    MAGE = 3
+};
+
 class Game {
 private:
     QString playerCharacter;

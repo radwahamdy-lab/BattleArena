@@ -7,6 +7,9 @@
 #include <QString>
 #include <cstdlib>
 #include <ctime>
+#include "game.h"
+#include "GameScreen.h"
+#include <QDebug>
 
 class CharacterScreen {
 	private:
@@ -66,20 +69,34 @@ class CharacterScreen {
 			startLayout->addWidget(mageBtn, 2, Qt::AlignCenter);
 			startLayout->addWidget(returnBtn, 2, Qt::AlignCenter);
 
-        		QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
-			    selectCharacter("Warrior");
-			    stackedwid->setCurrentIndex(2);
-			});
+            QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
+                qDebug() << "STEP 1";
+                selectCharacter("Warrior");
+                Game* game = new Game(userCharacter, computerCharacter);
+                qDebug() << "STEP 2";
+                game->startGame();
+                qDebug() << "STEP 3";
+                stackedwid->addWidget(game->getGameScreen()->getPage());
+                qDebug() << "STEP 4";
+                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
+                qDebug() << "STEP 5";
+            });
 
-			QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
-			    selectCharacter("Archer");
-			    stackedwid->setCurrentIndex(2);
-			});
+            QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
+                selectCharacter("Archer");
+                Game* game = new Game(userCharacter, computerCharacter);
+                game->startGame();
+                stackedwid->addWidget(game->getGameScreen()->getPage());
+                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
+            });
 
-			QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {
-			    selectCharacter("Mage");
-			    stackedwid->setCurrentIndex(2);
-			});
+            QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {
+                selectCharacter("Mage");
+                Game* game = new Game(userCharacter, computerCharacter);
+                game->startGame();
+                stackedwid->addWidget(game->getGameScreen()->getPage());
+                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
+            });
 
 			QObject::connect(returnBtn, &QPushButton::clicked, [stackedwid](){
 				stackedwid->setCurrentIndex(0);

@@ -18,6 +18,8 @@ add_executable(
     assets/resources.qrc
     gui/Scoreboard.h gui/Scoreboard.cpp
     gui/Obstacle.h gui/Obstacle.cpp
+    gui/Game.cpp
+    gui/Game.h
 )
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 target_link_libraries(game PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)

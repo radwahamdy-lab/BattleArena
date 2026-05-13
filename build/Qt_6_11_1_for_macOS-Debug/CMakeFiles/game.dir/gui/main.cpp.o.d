@@ -1169,9 +1169,10 @@ CMakeFiles/game.dir/gui/main.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/hanyahashem/BattleArena/gui/CharacterScreen.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
-  /Users/hanyahashem/BattleArena/gui/GameScreen.h \
+  /Users/hanyahashem/BattleArena/gui/game.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/hanyahashem/BattleArena/gui/GameScreen.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpainterpath.h \
@@ -1197,4 +1198,5 @@ CMakeFiles/game.dir/gui/main.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpen.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug

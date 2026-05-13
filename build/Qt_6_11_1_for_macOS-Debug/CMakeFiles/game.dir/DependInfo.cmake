@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/GBFAFXFCVO/qrc_resources.cpp" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d"
   "/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug/game_autogen/mocs_compilation.cpp" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/Character.cpp" "CMakeFiles/game.dir/gui/Character.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Character.cpp.o.d"
+  "/Users/hanyahashem/BattleArena/gui/Game.cpp" "CMakeFiles/game.dir/gui/Game.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Game.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/GameScreen.cpp" "CMakeFiles/game.dir/gui/GameScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/Obstacle.cpp" "CMakeFiles/game.dir/gui/Obstacle.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Obstacle.cpp.o.d"
   "/Users/hanyahashem/BattleArena/gui/Projectile.cpp" "CMakeFiles/game.dir/gui/Projectile.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"

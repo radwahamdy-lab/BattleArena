@@ -1,9 +1,10 @@
-CMakeFiles/game.dir/gui/game.cpp.o: \
-  /Users/hanyahashem/BattleArena/gui/game.cpp \
-  /Users/hanyahashem/BattleArena/gui/game.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h \
+CMakeFiles/game.dir/gui/Game.cpp.o: \
+  /Users/hanyahashem/BattleArena/gui/Game.cpp \
+  /Users/hanyahashem/BattleArena/gui/GameScreen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QWidget \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qwidget.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
@@ -853,6 +854,13 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtresource.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qttranslation.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qversiontagging.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qnamespace.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcompare.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstdlibdetection.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcomparehelpers.h \
@@ -988,11 +996,15 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtmetamacros.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobject.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstringview.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qbytearray.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qrefcount.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qnamespace.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtmetamacros.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qarraydata.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qpair.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qarraydatapointer.h \
@@ -1014,14 +1026,6 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstringbuilder.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstringconverter.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qstringconverter_base.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qbasictimer.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobject.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qlist.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/numeric \
@@ -1079,18 +1083,6 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/forward_list \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qeventloop.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
-  /Users/hanyahashem/BattleArena/gui/GameScreen.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QWidget \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qwidget.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qmargins.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcheckedint_impl.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q23utility.h \
@@ -1152,10 +1144,18 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qstackedwidget.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qframe.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
-  /Users/hanyahashem/BattleArena/gui/Character.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsPixmapItem \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qbasictimer.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qeventloop.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpainterpath.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
+  /Users/hanyahashem/BattleArena/gui/Character.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsPixmapItem \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QKeyEvent \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qevent.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcoreevent.h \
@@ -1181,7 +1181,12 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QPixmap \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsTextItem \
+  /Users/hanyahashem/BattleArena/gui/Obstacle.h \
+  /Users/hanyahashem/BattleArena/gui/Scoreboard.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qpen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/QFont \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/QMessageBox \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -1243,4 +1248,6 @@ CMakeFiles/game.dir/gui/game.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qdatetime.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qcalendar.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qfileinfo.h \
-  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimezone.h
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qtimezone.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
+  /Users/hanyahashem/BattleArena/gui/game.h
