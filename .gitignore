@@ -1,0 +1,11 @@
+build/
+.qtcreator/
+*.user
+*.obj
+*.o
+*.exe
+*.dll
+*.ninja_deps
+*.ninja_log
+CMakeFiles/
+game_autogen/
