@@ -77,7 +77,6 @@ game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Archer/Archer_Idle.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Attack2.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Idle.png
-game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Attack.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Warrior/Warrior_Run.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Magic.png
 game_autogen/GBFAFXFCVO/qrc_resources.cpp: /Users/hanyahashem/BattleArena/assets/characters/Mage/Mage_Idle.png

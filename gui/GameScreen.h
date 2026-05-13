@@ -10,6 +10,9 @@
 #include "Character.h"
 #include <QGraphicsTextItem>
 #include <QString>
+#include <functional>
+
+using namespace std;
 
 class GameScreen {
 	private:
@@ -18,10 +21,14 @@ class GameScreen {
 		Character *player;
 		Character *comp;
         QGraphicsTextItem* timerText;
+        function<void()> quitCallback;
 	public:
 		GameScreen(QStackedWidget*, int, int);
 		QWidget* getPage();
         void updateTimer(QString text);
+        void setQuitCallback(function<void()> callback);
+        Character* getPlayer();
+        Character* getComp();
 
 };
 

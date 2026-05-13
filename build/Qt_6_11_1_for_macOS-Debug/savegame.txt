@@ -1,0 +1,6 @@
+=== GAME SAVE ===
+Player Character: Warrior
+Computer Character: Archer
+Time Remaining: 174
+Player Score: 0
+Computer Score: 0

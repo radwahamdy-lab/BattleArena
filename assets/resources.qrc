@@ -1,5 +1,4 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
+<RCC>
     <qresource prefix="/">
         <file>grass_block.png</file>
         <file>characters/Archer/Archer_Idle.png</file>
@@ -9,7 +8,6 @@
         <file>characters/Mage/Magic.png</file>
         <file>characters/Warrior/Warrior_Run.png</file>
         <file>characters/Warrior/Warrior_Idle.png</file>
-        <file>characters/Warrior/Warrior_Attack.png</file>
         <file>characters/Warrior/Warrior_Attack2.png</file>
         <file>characters/Archer/Arrow.png</file>
     </qresource>

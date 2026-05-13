@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mygame",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "game::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game-Debug-a879b7bcb886093f4faf.json",
+					"name" : "game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_autogen-Debug-4a853be11396572f7236.json",
+					"name" : "game_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_autogen_timestamp_deps-Debug-6b1f146c1593d7bb8204.json",
+					"name" : "game_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hanyahashem/BattleArena/build/Qt_6_11_1_for_macOS-Debug",
+		"source" : "/Users/hanyahashem/BattleArena"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

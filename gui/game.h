@@ -33,6 +33,11 @@ public:
     void updateGame();
 
     void endGame();
+    void quitGame();
+    void saveGame();
+
+    int playerScore;
+    int computerScore;
 
     QString getPlayerCharacter();
     QString getComputerCharacter();

@@ -21,6 +21,12 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     QGraphicsScene *scene = new QGraphicsScene();
     scene->setSceneRect(0, 0, 800, 600);
     QGraphicsView *view = new QGraphicsView(scene);
+    QPushButton* quitButton = new QPushButton("Quit");
+    quitButton->setStyleSheet(
+        "font: 16pt 'JetBrainsMono Nerd Font Propo';"
+        "color: white;"
+        "background-color: rgb(120, 30, 30);"
+        );
 
     // Drawing Bckground
     QPixmap grassTile(":/grass_block.png");
@@ -49,6 +55,12 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
     view->setCacheMode(QGraphicsView::CacheBackground);
 
     layout->addWidget(view);
+    layout->addWidget(quitButton);
+    QObject::connect(quitButton, &QPushButton::clicked, [this]() {
+
+        if(quitCallback)
+            quitCallback();
+    });
     view->show();
     view->setFocusPolicy(Qt::StrongFocus);
     view->setFocus();
@@ -62,4 +74,16 @@ QWidget* GameScreen::getPage(){
 
 void GameScreen::updateTimer(QString text){
     timerText->setPlainText(text);
+}
+
+void GameScreen::setQuitCallback(function<void()> callback){
+    quitCallback = callback;
+}
+
+Character* GameScreen::getPlayer(){
+    return player;
+}
+
+Character* GameScreen::getComp(){
+    return comp;
 }
