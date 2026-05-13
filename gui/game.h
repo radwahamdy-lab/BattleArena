@@ -4,7 +4,10 @@
 #include <QString>
 #include <QTimer>
 
+class QWidget;
+class QStackedWidget;
 class GameScreen;
+class GameOverScreen;
 
 enum GameState {
     MENU,
@@ -23,16 +26,21 @@ private:
     QString playerCharacter;
     QString computerCharacter;
 
-    GameState currentState; // stores menu, playing, gameover
+    GameState currentState;
 
     int remainingTime;
 
     QTimer* gameTimer;
 
-    GameScreen* gameScreen; // stores the actual screen object
+    GameScreen* gameScreen;
+    GameOverScreen* gameOverScreen;
+
+    QStackedWidget* stackedWidget;
+    QWidget* characterSelectionPage;
 
 public:
     Game(QString player, QString computer);
+    Game(QString player, QString computer, QStackedWidget* stackedwid, QWidget* characterPage);
 
     void startGame();
 
