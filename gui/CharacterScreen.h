@@ -1,4 +1,3 @@
-
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QPushButton>
@@ -34,36 +33,54 @@ class CharacterScreen {
 
 	public:
 		CharacterScreen(QStackedWidget* stackedwid){
-			srand(time(0));  
-
+			srand(time(0));
+			characterPage->setStyleSheet("background-color: rgb(58, 57, 57);");
 			QVBoxLayout *startLayout = new QVBoxLayout(characterPage);
+
 			QLabel *title = new QLabel("Choose Your Character");
-			startLayout->addWidget(title);
+			title->setStyleSheet("font: 700 36pt 'JetBrainsMono Nerd Font Propo'; color: white");
 
 		        QPushButton *warriorBtn = new QPushButton("Warrior");
-       		        QPushButton *archerBtn = new QPushButton("Archer");
-		        QPushButton *mageBtn = new QPushButton("Mage");
+			warriorBtn->setFixedWidth(611);
+			warriorBtn->setFixedHeight(51);
+                        warriorBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
+
+			QPushButton *archerBtn = new QPushButton("Archer");
+			archerBtn->setFixedWidth(611);
+			archerBtn->setFixedHeight(51);
+                        archerBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
+
+			QPushButton *mageBtn = new QPushButton("Mage");
+			mageBtn->setFixedWidth(611);
+			mageBtn->setFixedHeight(51);
+                        mageBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
         		QPushButton *returnBtn = new QPushButton("Return");
-			returnBtn->setGeometry(90, 190, 611, 51);
-			returnBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white; background-color: rgb(47, 47, 47);");
+			returnBtn->setFixedWidth(611);
+			returnBtn->setFixedHeight(51);
+			returnBtn->setStyleSheet("font: 16pt 'JetBrainsMono Nerd Font Propo'; color: white;");
 
-			startLayout->addWidget(warriorBtn);
-		        startLayout->addWidget(archerBtn);
-        		startLayout->addWidget(mageBtn);
-			startLayout->addWidget(returnBtn);
+			startLayout->addWidget(title, 2, Qt::AlignCenter);
+		        startLayout->addWidget(warriorBtn, 2, Qt::AlignCenter);
+        		startLayout->addWidget(archerBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(mageBtn, 2, Qt::AlignCenter);
+			startLayout->addWidget(returnBtn, 2, Qt::AlignCenter);
 
-        		QObject::connect(warriorBtn, &QPushButton::clicked, [this]() {
+        		QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
 			    selectCharacter("Warrior");
+			    stackedwid->setCurrentIndex(2);
 			});
 
-			QObject::connect(archerBtn, &QPushButton::clicked, [this]() {
+			QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
 			    selectCharacter("Archer");
+			    stackedwid->setCurrentIndex(2);
 			});
 
-			QObject::connect(mageBtn, &QPushButton::clicked, [this]() {
+			QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {
 			    selectCharacter("Mage");
+			    stackedwid->setCurrentIndex(2);
 			});
+
 			QObject::connect(returnBtn, &QPushButton::clicked, [stackedwid](){
 				stackedwid->setCurrentIndex(0);
 			});
