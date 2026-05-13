@@ -27,12 +27,10 @@ int main(int argc, char *argv[])
 
     StartScreen startPage(stackedWidget, &a);
     CharacterScreen characterPage(stackedWidget);
-    GameScreen gamePage(stackedWidget, playerCharacter, compCharacter);
 
     // Add Views to Stacked Widget
     stackedWidget->addWidget(startPage.getPage());
     stackedWidget->addWidget(characterPage.getPage());
-    stackedWidget->addWidget(gamePage.getPage());
 
     // Display the first view
     stackedWidget->setCurrentIndex(0);
