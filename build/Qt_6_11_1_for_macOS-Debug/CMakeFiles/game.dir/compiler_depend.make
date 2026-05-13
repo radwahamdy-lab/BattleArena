@@ -2215,12 +2215,15 @@ CMakeFiles/game.dir/gui/Character.cpp.o: /Users/hanyahashem/BattleArena/gui/Char
   /Users/hanyahashem/BattleArena/gui/Character.h \
   /Users/hanyahashem/BattleArena/gui/Obstacle.h \
   /Users/hanyahashem/BattleArena/gui/Projectile.h \
+  /Users/hanyahashem/BattleArena/gui/game.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QList \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QRandomGenerator \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QRect \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QSize \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QSizeF \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QString \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q17memory.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q20bit.h \
@@ -9382,6 +9385,7 @@ CMakeFiles/game.dir/gui/StartScreen.cpp.o: /Users/hanyahashem/BattleArena/gui/St
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/hanyahashem/BattleArena/gui/StartScreen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q17memory.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/q20bit.h \
@@ -10825,8 +10829,6 @@ CMakeFiles/game.dir/gui/main.cpp.o: /Users/hanyahashem/BattleArena/gui/main.cpp 
 
 /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDir:
 
-/Users/hanyahashem/BattleArena/gui/game.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iomanip:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__filesystem/u8path.h:
@@ -10844,6 +10846,8 @@ CMakeFiles/game.dir/gui/main.cpp.o: /Users/hanyahashem/BattleArena/gui/main.cpp 
 /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qrandom.h:
 
 /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QRandomGenerator:
+
+/Users/hanyahashem/BattleArena/gui/game.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/queue:
 

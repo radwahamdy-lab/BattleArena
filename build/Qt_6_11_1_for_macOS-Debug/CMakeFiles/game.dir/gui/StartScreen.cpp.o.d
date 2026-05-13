@@ -1163,4 +1163,5 @@ CMakeFiles/game.dir/gui/StartScreen.cpp.o: \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qinputmethod.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/hanyahashem/BattleArena/gui/StartScreen.h
+  /Users/hanyahashem/BattleArena/gui/StartScreen.h \
+  /Users/hanyahashem/Qt1/6.11.1/macos/lib/QtCore.framework/Headers/QDebug

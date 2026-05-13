@@ -12,6 +12,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <QDebug>
+#include "game.h"
+
 using namespace std;
 
 Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGraphicsPixmapItem(), scene(sc), character(chr){
@@ -33,9 +36,21 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
             }   
         });
     }
-    if(character == 1) char_ptr = warrior;
-    else if(character == 2) char_ptr = archer;
-    else if(character == 3) char_ptr = mage;
+    qDebug() << "CHARACTER NUMBER =" << character;
+
+    if(character == 1){
+        qDebug() << "ARCHER";
+        char_ptr = archer;
+    }
+    else if(character == 2){
+        qDebug() << "WARRIOR";
+        char_ptr = warrior;
+    }
+    else if(character == 3){
+        qDebug() << "MAGE";
+        char_ptr = mage;
+    }
+
     setPixmap(char_ptr[0]);
     setZValue(1);
 }

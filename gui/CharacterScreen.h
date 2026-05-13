@@ -22,10 +22,10 @@ class CharacterScreen {
 		        int choice = rand() % 3 + 1;
 
       		        if (choice == 1)
-           	       		 return "Warrior";
+                         return "Archer";
        		        else if (choice == 2)
-          	       		 return "Archer";
-       		        else
+                         return "Warrior";
+                    else if (choice == 3)
           		         return "Mage";
     }
 
@@ -69,6 +69,14 @@ class CharacterScreen {
 			startLayout->addWidget(mageBtn, 2, Qt::AlignCenter);
 			startLayout->addWidget(returnBtn, 2, Qt::AlignCenter);
 
+            QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
+                selectCharacter("Archer");
+                Game* game = new Game(userCharacter, computerCharacter);
+                game->startGame();
+                stackedwid->addWidget(game->getGameScreen()->getPage());
+                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
+            });
+
             QObject::connect(warriorBtn, &QPushButton::clicked, [this, stackedwid]() {
                 qDebug() << "STEP 1";
                 selectCharacter("Warrior");
@@ -80,14 +88,6 @@ class CharacterScreen {
                 qDebug() << "STEP 4";
                 stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
                 qDebug() << "STEP 5";
-            });
-
-            QObject::connect(archerBtn, &QPushButton::clicked, [this, stackedwid]() {
-                selectCharacter("Archer");
-                Game* game = new Game(userCharacter, computerCharacter);
-                game->startGame();
-                stackedwid->addWidget(game->getGameScreen()->getPage());
-                stackedwid->setCurrentWidget(game->getGameScreen()->getPage());
             });
 
             QObject::connect(mageBtn, &QPushButton::clicked, [this, stackedwid]() {

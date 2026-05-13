@@ -22,25 +22,36 @@ Game::Game(QString player, QString computer) {
 
 void Game::startGame() {
 
-    int playerType;
-    int computerType;
+    int playerType = 2;
+    int computerType = 2;
 
-    // convert player character string into enum value in game.h
-    if(playerCharacter == "Warrior")
-        playerType = WARRIOR;
-    else if(playerCharacter == "Archer")
-        playerType = ARCHER;
-    else
-        playerType = MAGE;
+    qDebug() << "PLAYER STRING =" << playerCharacter;
+    qDebug() << "COMPUTER STRING =" << computerCharacter;
 
-    // convert computer character string into enum value
-    if(computerCharacter == "Warrior")
-        computerType = WARRIOR;
-    else if(computerCharacter == "Archer")
-        computerType = ARCHER;
-    else
-        computerType = MAGE;
+    // PLAYER MAPPING
+    if(playerCharacter == "Warrior"){
+        playerType = 2;
+    }
+    else if(playerCharacter == "Archer"){
+        playerType = 1;
+    }
+    else if(playerCharacter == "Mage"){
+        playerType = 3;
+    }
 
+    // COMPUTER MAPPING
+    if(computerCharacter == "Warrior"){
+        computerType = 2;
+    }
+    else if(computerCharacter == "Archer"){
+        computerType = 1;
+    }
+    else if(computerCharacter == "Mage"){
+        computerType = 3;
+    }
+
+    qDebug() << "PLAYER TYPE =" << playerType;
+    qDebug() << "COMPUTER TYPE =" << computerType;
 
     gameScreen = new GameScreen(
         nullptr,

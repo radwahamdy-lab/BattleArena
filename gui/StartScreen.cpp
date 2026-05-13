@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QApplication>
 #include "StartScreen.h"
+#include <QDebug>
 
 StartScreen::StartScreen(QStackedWidget* stackedwid, QApplication* a){
     startPage->setStyleSheet("background-color: rgb(58, 57, 57);");
@@ -38,8 +39,9 @@ StartScreen::StartScreen(QStackedWidget* stackedwid, QApplication* a){
         stackedwid->setCurrentIndex(1);
     });
 
-    QObject::connect(contGameBtn, &QPushButton::clicked, [stackedwid](){
-        stackedwid->setCurrentIndex(2);
+    QObject::connect(contGameBtn, &QPushButton::clicked, [](){
+
+        qDebug() << "Continue Game not implemented yet";
     });
 
     QObject::connect(exitBtn, &QPushButton::clicked, a, &QApplication::quit);
