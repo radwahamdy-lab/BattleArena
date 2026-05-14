@@ -128,19 +128,31 @@ bool Character::collidesWithObstacle(){
 }
 
 void Character::shoot(){
+    if(!canShoot)
+        return;
+
+    canShoot = false;
+
     setPixmap(char_ptr[2]);
+
     if(direction==1)
         setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
     else if(direction==2)
         setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+
     Projectile* projectile = new Projectile(scene, enemy, this, 1);
 
     QTimer::singleShot(160, [this](){
         setPixmap(char_ptr[0]);
+
         if(direction==1)
             setPixmap(pixmap().transformed(QTransform().scale(1, 1)));
         else if(direction==2)
             setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
+    });
+
+    QTimer::singleShot(600, [this](){
+        canShoot = true;
     });
 }
 

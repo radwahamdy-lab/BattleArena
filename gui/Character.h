@@ -56,7 +56,7 @@ class Character : public QObject, public QGraphicsPixmapItem {
         int character;
         int direction;
         int score = 0;
-
+	bool canShoot = true;
     signals:
         void scoreChanged();
 

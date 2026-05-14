@@ -10,10 +10,17 @@
 #include <QStringList>
 #include <QDebug>
 #include <iostream> 
-using namespace std;
 #include "StartScreen.h"
+#include "GameScreen.h"
 
-StartScreen::StartScreen(QStackedWidget* stackedwid, QApplication* a){
+
+using namespace std;
+
+
+StartScreen::StartScreen(QStackedWidget* stackedwid, QApplication* a, Game* g){
+    game = g;
+    this->stackedwid = stackedwid;
+
     startPage->setStyleSheet("background-color: rgb(58, 57, 57);");
     QVBoxLayout *startLayout = new QVBoxLayout(startPage);
 
@@ -108,7 +115,7 @@ void StartScreen::continueGame(){
         }
 
         file.close();
-        game->start(userCharacter, computerCharacter);
+        game->start(playerCharacter, computerCharacter);
 		stackedwid->addWidget(game->getGameScreen()->getPage());
 		stackedwid->setCurrentIndex(2);
     }

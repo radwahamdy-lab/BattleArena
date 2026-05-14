@@ -14,7 +14,7 @@ class Game : public QObject{
         int playerCharacter;
         int compCharacter;
         GameState currentState; // stores menu, playing, gameover
-        int roundTime = 10;
+        int roundTime = 120;
         int remainingTime;
         QTimer* gameTimer;
         GameScreen* gameScreen = nullptr; // stores the actual screen object

@@ -1,5 +1,0 @@
-/home/drrad/BattleArena/build/CMakeFiles/game.dir
-/home/drrad/BattleArena/build/CMakeFiles/edit_cache.dir
-/home/drrad/BattleArena/build/CMakeFiles/rebuild_cache.dir
-/home/drrad/BattleArena/build/CMakeFiles/game_autogen_timestamp_deps.dir
-/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir

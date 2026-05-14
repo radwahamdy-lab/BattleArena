@@ -1,6 +1,6 @@
 === GAME SAVE ===
-Player Character: 2
-Computer Character: 2
+Player Character: 3
+Computer Character: 1
 Time Remaining: 7
 Player Score: 0
 Computer Score: 0
