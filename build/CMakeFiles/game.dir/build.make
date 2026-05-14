@@ -203,10 +203,38 @@ CMakeFiles/game.dir/gui/Obstacle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Obstacle.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/Obstacle.cpp -o CMakeFiles/game.dir/gui/Obstacle.cpp.s
 
+CMakeFiles/game.dir/gui/Game.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/Game.cpp.o: /home/drrad/BattleArena/gui/Game.cpp
+CMakeFiles/game.dir/gui/Game.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/gui/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/Game.cpp.o -MF CMakeFiles/game.dir/gui/Game.cpp.o.d -o CMakeFiles/game.dir/gui/Game.cpp.o -c /home/drrad/BattleArena/gui/Game.cpp
+
+CMakeFiles/game.dir/gui/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/Game.cpp > CMakeFiles/game.dir/gui/Game.cpp.i
+
+CMakeFiles/game.dir/gui/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/Game.cpp -o CMakeFiles/game.dir/gui/Game.cpp.s
+
+CMakeFiles/game.dir/gui/GameOverScreen.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/gui/GameOverScreen.cpp.o: /home/drrad/BattleArena/gui/GameOverScreen.cpp
+CMakeFiles/game.dir/gui/GameOverScreen.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/gui/GameOverScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/gui/GameOverScreen.cpp.o -MF CMakeFiles/game.dir/gui/GameOverScreen.cpp.o.d -o CMakeFiles/game.dir/gui/GameOverScreen.cpp.o -c /home/drrad/BattleArena/gui/GameOverScreen.cpp
+
+CMakeFiles/game.dir/gui/GameOverScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/gui/GameOverScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drrad/BattleArena/gui/GameOverScreen.cpp > CMakeFiles/game.dir/gui/GameOverScreen.cpp.i
+
+CMakeFiles/game.dir/gui/GameOverScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/gui/GameOverScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drrad/BattleArena/gui/GameOverScreen.cpp -o CMakeFiles/game.dir/gui/GameOverScreen.cpp.s
+
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: game_autogen/GBFAFXFCVO/qrc_resources.cpp
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -MF CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d -o CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o -c /home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp
 
 CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.i: cmake_force
@@ -227,6 +255,8 @@ game_OBJECTS = \
 "CMakeFiles/game.dir/gui/Projectile.cpp.o" \
 "CMakeFiles/game.dir/gui/Scoreboard.cpp.o" \
 "CMakeFiles/game.dir/gui/Obstacle.cpp.o" \
+"CMakeFiles/game.dir/gui/Game.cpp.o" \
+"CMakeFiles/game.dir/gui/GameOverScreen.cpp.o" \
 "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 
 # External object files for target game
@@ -240,6 +270,8 @@ game: CMakeFiles/game.dir/gui/Character.cpp.o
 game: CMakeFiles/game.dir/gui/Projectile.cpp.o
 game: CMakeFiles/game.dir/gui/Scoreboard.cpp.o
 game: CMakeFiles/game.dir/gui/Obstacle.cpp.o
+game: CMakeFiles/game.dir/gui/Game.cpp.o
+game: CMakeFiles/game.dir/gui/GameOverScreen.cpp.o
 game: CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
@@ -248,7 +280,7 @@ game: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 game: /usr/lib/x86_64-linux-gnu/libGLX.so
 game: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

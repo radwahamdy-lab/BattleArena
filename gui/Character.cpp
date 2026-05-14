@@ -22,12 +22,12 @@ Character::Character(QGraphicsScene* sc, int chr, bool isComp) : QObject(), QGra
     } else {
         setPos(600,0);
         direction = 2;
-        QTimer* movement_timer = new QTimer();
-        QTimer* shooting_timer = new QTimer();
+        movement_timer = new QTimer();
+        shooting_timer = new QTimer();
         movement_timer->start(1000);
         shooting_timer->start(1500);
         QObject::connect(movement_timer, &QTimer::timeout, this, &Character::moveRandomly);
-        QObject::connect(shooting_timer, &QTimer::timeout, this, [this, movement_timer](){
+        QObject::connect(shooting_timer, &QTimer::timeout, this, [this](){
             if(movement_timer->isActive()){
                 shoot();
             }   
@@ -44,6 +44,7 @@ void Character::moveRandomly(){
     srand(time(0));
     int random_direction = rand() % 5 + 1;
     int random_time = rand() & 4 + 2;
+
     QTimer* one_move_timer = new QTimer();
     one_move_timer->setSingleShot(true);
     one_move_timer->start(random_time*100);
@@ -133,6 +134,7 @@ void Character::shoot(){
     else if(direction==2)
         setPixmap(pixmap().transformed(QTransform().scale(-1, 1)));
     Projectile* projectile = new Projectile(scene, enemy, this, 1);
+
     QTimer::singleShot(160, [this](){
         setPixmap(char_ptr[0]);
         if(direction==1)
@@ -173,4 +175,17 @@ void Character::setEnemy(QGraphicsItem* en){
 
 void Character::setObstacles(vector<Obstacle*> obst){
     obstacles = obst;
+}
+
+QTimer* Character::getMovementTimer(){
+    return movement_timer;
+}
+
+QTimer* Character::getShootingTimer(){
+    return shooting_timer;
+}
+
+void Character::continueTimers(){
+    movement_timer->start(1000);
+    shooting_timer->start(1500);
 }

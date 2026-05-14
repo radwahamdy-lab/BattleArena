@@ -177,43 +177,55 @@
 	[
 		[
 			"/home/drrad/BattleArena/gui/Character.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_Character.cpp",
 			null
 		],
 		[
 			"/home/drrad/BattleArena/gui/CharacterScreen.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_CharacterScreen.cpp",
 			null
 		],
 		[
+			"/home/drrad/BattleArena/gui/Game.h",
+			"MU",
+			"DMHXEJ42XS/moc_Game.cpp",
+			null
+		],
+		[
+			"/home/drrad/BattleArena/gui/GameOverScreen.h",
+			"MU",
+			"DMHXEJ42XS/moc_GameOverScreen.cpp",
+			null
+		],
+		[
 			"/home/drrad/BattleArena/gui/GameScreen.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_GameScreen.cpp",
 			null
 		],
 		[
 			"/home/drrad/BattleArena/gui/Obstacle.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_Obstacle.cpp",
 			null
 		],
 		[
 			"/home/drrad/BattleArena/gui/Projectile.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_Projectile.cpp",
 			null
 		],
 		[
 			"/home/drrad/BattleArena/gui/Scoreboard.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_Scoreboard.cpp",
 			null
 		],
 		[
 			"/home/drrad/BattleArena/gui/StartScreen.h",
-			"Mu",
+			"MU",
 			"DMHXEJ42XS/moc_StartScreen.cpp",
 			null
 		]
@@ -263,19 +275,25 @@
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
-	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
 	"SETTINGS_FILE" : "/home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/drrad/BattleArena/gui/Character.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/GameScreen.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/Obstacle.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/Projectile.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/Scoreboard.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/StartScreen.cpp", "Mu", null ],
-		[ "/home/drrad/BattleArena/gui/main.cpp", "Mu", null ]
+		[ "/home/drrad/BattleArena/gui/Character.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/Game.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/GameOverScreen.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/GameScreen.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/Obstacle.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/Projectile.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/Scoreboard.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/StartScreen.cpp", "MU", null ],
+		[ "/home/drrad/BattleArena/gui/main.cpp", "MU", null ]
 	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
 }

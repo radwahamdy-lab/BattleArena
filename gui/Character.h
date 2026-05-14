@@ -25,6 +25,10 @@ class Character : public QObject, public QGraphicsPixmapItem {
         void moveRandomly();
         bool collidesWithObstacle();
         vector<Obstacle*> obstacles;
+        QTimer* getMovementTimer();
+        QTimer* getShootingTimer();
+        void continueTimers();
+
     protected:
         void keyPressEvent(QKeyEvent *event);
         void keyReleaseEvent(QKeyEvent *event);
@@ -45,6 +49,8 @@ class Character : public QObject, public QGraphicsPixmapItem {
         QPixmap* char_ptr;
         QGraphicsScene* scene;
         QGraphicsItem* enemy;
+        QTimer* movement_timer;
+        QTimer* shooting_timer;
         
         int speed = 5;
         int character;

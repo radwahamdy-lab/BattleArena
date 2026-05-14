@@ -1,4 +1,4 @@
-
+#pragma once
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QPushButton>
@@ -12,7 +12,8 @@
 #include <vector>
 using namespace std;
 
-class GameScreen {
+class GameScreen : public QObject{
+    Q_OBJECT
 	private:
 		QWidget *gamePage = new QWidget;
 		int time = 180;
@@ -21,8 +22,19 @@ class GameScreen {
 		Character *comp;
         Scoreboard* scoreboard;
 		vector<Obstacle*> obstacles;
+        QGraphicsTextItem *timerText;
+        QGraphicsScene *scene;
+        QGraphicsView *view;
+        QPushButton* quitButton;
 	public:
-		GameScreen(QStackedWidget*, int, int);
+		GameScreen(QStackedWidget*);
 		QWidget* getPage();
+        void updateTimer(QString text);
+        Character* getPlayer();
+        Character* getComp();
+        void startGame(int, int);
+
+    signals:
+        void quitButtonClicked();
 
 };

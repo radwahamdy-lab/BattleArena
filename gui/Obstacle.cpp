@@ -23,7 +23,7 @@ Obstacle::Obstacle(QGraphicsScene* sc, QPointF char1_pos, QPointF char2_pos) : s
 }
 
 bool Obstacle::isOnPlayer(QPointF planned_pos, QPointF player_pos){
-    return (abs(planned_pos.x() - player_pos.x()) < 50) && (abs(planned_pos.y() - player_pos.y()) < 50);
+    return (abs(planned_pos.x() - player_pos.x()) < 100) && (abs(planned_pos.y() - player_pos.y()) < 100);
 }
 
 bool Obstacle::isOnObstacle(QPointF planned_pos){

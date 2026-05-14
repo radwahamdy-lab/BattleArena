@@ -69,8 +69,9 @@ include CMakeFiles/game_autogen.dir/progress.make
 CMakeFiles/game_autogen: game_autogen/timestamp
 
 game_autogen/timestamp: /usr/lib/qt6/libexec/moc
+game_autogen/timestamp: /usr/lib/qt6/libexec/uic
 game_autogen/timestamp: CMakeFiles/game_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/drrad/BattleArena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target game"
 	/usr/bin/cmake -E cmake_autogen /home/drrad/BattleArena/build/CMakeFiles/game_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/drrad/BattleArena/build/game_autogen/timestamp
 

@@ -21,43 +21,47 @@
 using namespace std;
 
 
-GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int compCharacter){
+GameScreen::GameScreen(QStackedWidget* stackedwid) : QObject(){
     QVBoxLayout* layout = new QVBoxLayout(gamePage);
 
-    QGraphicsScene *scene = new QGraphicsScene();
+    scene = new QGraphicsScene();
     scene->setSceneRect(0, 0, 800, 600);
-    QGraphicsView *view = new QGraphicsView(scene);
+    view = new QGraphicsView(scene);
 
     // Drawing Bckground
     QPixmap grassTile(":/grass_block.png");
     scene->setBackgroundBrush(QBrush(grassTile));
 
     // Drawing Timer
-    QGraphicsTextItem *timerText = new QGraphicsTextItem();
+    timerText = new QGraphicsTextItem();
     QFont timer_font("JetBrainsMono Nerd Font Propo", 35, QFont::Bold);
     timerText->setDefaultTextColor(QColor(229, 68, 9));
     timerText->setFont(timer_font);
     timerText->setPos(350, 10);
-    timerText->setPlainText("3:00");
     scene->addItem(timerText);
     timerText->setZValue(1);
 
-    // Creating Timer
-    QTimer *sec = new QTimer();
-    QObject::connect(sec, &QTimer::timeout, [sec, this, timerText](){
-        if(time != 0){
-            time--;
-            int minutes = this->time/60;
-            int seconds = this->time%60;
-            string seconds_str = to_string(seconds).length()==1 ? "0"+to_string(seconds) : to_string(seconds);
-            string time_str = to_string(minutes) + ":" + seconds_str;
-            QString time_qt = QString::fromStdString(time_str);
-            timerText->setPlainText(time_qt);
-            sec->start(1000);
-        }
+    // Quit Button
+    quitButton = new QPushButton("Quit");
+    quitButton->setStyleSheet(
+        "font: 16pt 'JetBrainsMono Nerd Font Propo';"
+        "color: white;"
+        "background-color: rgb(120, 30, 30);"
+    );
+    quitButton->setFixedHeight(50);
+    QObject::connect(quitButton, &QPushButton::clicked, [this]() {
+        emit quitButtonClicked();
     });
-    sec->start(1000);
 
+    
+    view->setCacheMode(QGraphicsView::CacheBackground);
+
+    layout->addWidget(view);
+    layout->addWidget(quitButton);
+
+}
+
+void GameScreen::startGame(int playerCharacter, int compCharacter){
     // Creating Character
     player = new Character(scene, playerCharacter, false);
     scene->addItem(player);
@@ -78,14 +82,26 @@ GameScreen::GameScreen(QStackedWidget* stackedwid, int playerCharacter, int comp
 
     player->setObstacles(obstacles);
     comp->setObstacles(obstacles);
-
-    view->setCacheMode(QGraphicsView::CacheBackground);
-
-    layout->addWidget(view);
     view->show();
+
 
 }
 
 QWidget* GameScreen::getPage(){
     return gamePage;
+}
+
+void GameScreen::updateTimer(QString text){
+    timerText->setPlainText(text);
+    if(text == "GAME OVER"){
+        timerText->setPos(250, 250);
+    }
+}
+
+Character* GameScreen::getPlayer(){
+    return player;
+}
+
+Character* GameScreen::getComp(){
+    return comp;
 }

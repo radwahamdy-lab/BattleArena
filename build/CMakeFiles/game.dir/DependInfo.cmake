@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/drrad/BattleArena/build/game_autogen/GBFAFXFCVO/qrc_resources.cpp" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d"
   "/home/drrad/BattleArena/build/game_autogen/mocs_compilation.cpp" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/game.dir/game_autogen/mocs_compilation.cpp.o.d"
   "/home/drrad/BattleArena/gui/Character.cpp" "CMakeFiles/game.dir/gui/Character.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Character.cpp.o.d"
+  "/home/drrad/BattleArena/gui/Game.cpp" "CMakeFiles/game.dir/gui/Game.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Game.cpp.o.d"
+  "/home/drrad/BattleArena/gui/GameOverScreen.cpp" "CMakeFiles/game.dir/gui/GameOverScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameOverScreen.cpp.o.d"
   "/home/drrad/BattleArena/gui/GameScreen.cpp" "CMakeFiles/game.dir/gui/GameScreen.cpp.o" "gcc" "CMakeFiles/game.dir/gui/GameScreen.cpp.o.d"
   "/home/drrad/BattleArena/gui/Obstacle.cpp" "CMakeFiles/game.dir/gui/Obstacle.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Obstacle.cpp.o.d"
   "/home/drrad/BattleArena/gui/Projectile.cpp" "CMakeFiles/game.dir/gui/Projectile.cpp.o" "gcc" "CMakeFiles/game.dir/gui/Projectile.cpp.o.d"
